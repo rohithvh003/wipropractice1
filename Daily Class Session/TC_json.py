@@ -6,5 +6,5 @@ data ={
     "Skills" :["Python","java"]
 }
 
-with open("data.json","w") as file:
+with open("data.json", "w") as file:
     json.dump(data,file,indent= 4)
