@@ -1,3 +1,3 @@
 def student_generator(students):
-    for student in students:
-        yield f"{student.sid} - {student.name}"
+    for s in students:
+        yield f"{s.pid} - {s.name}"
