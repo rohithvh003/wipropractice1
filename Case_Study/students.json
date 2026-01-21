@@ -10,5 +10,25 @@
             82,
             86
         ]
+    },
+    {
+        "id": "2",
+        "name": "rohith",
+        "department": "cse",
+        "semester": 7,
+        "marks": [
+            78,
+            75
+        ]
+    },
+    {
+        "id": "2",
+        "name": "rohith",
+        "department": "cse",
+        "semester": 7,
+        "marks": [
+            78,
+            75
+        ]
     }
 ]

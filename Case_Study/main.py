@@ -1,3 +1,4 @@
+from Case_Study.core.iterators import faculty_generator
 from class_models.student import Student
 from class_models.faculty import Faculty
 from class_models.course import Course
@@ -23,7 +24,7 @@ while True:
         sid = input("ID: ")
         duplicate = False
         for s in students:
-            if s.pid ==sid:
+            if s.pid == sid:
                 duplicate = True
                 break
         if duplicate:
@@ -108,11 +109,17 @@ while True:
         generate_csv(students)
 
         # ---- GENERATOR OUTPUT ----
-        print("\nStudent Records Generator)")
+        print("\nStudent Records Generator")
         for rec in student_generator(students):
             print("Fetching Student Records...")
             print("---------------------------")
             print(rec)
+
+        print("\nFaculty Records Generator")
+        for rec1 in faculty_generator(faculty_list):
+            print("fetching faculty records...")
+            print("---------------------------")
+            print(rec1)
 
     # ---------- EXIT ----------
     elif choice == "6":

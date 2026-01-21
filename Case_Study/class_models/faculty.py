@@ -2,7 +2,6 @@ from Case_Study.class_models.person import Person
 
 class Faculty(Person):
     def __init__(self, fid, name, department, salary):
-        super().__init__(fid, name, department)
         self.salary = salary
         self.fid = fid
         self.name = name
