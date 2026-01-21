@@ -19,7 +19,7 @@ while True:
 
     choice = input("Enter choice: ")
 
-    # ---------- ADD STUDENT ----------
+# Add the Student
     if choice == "1":
         sid = input("ID: ")
         duplicate = False
@@ -38,7 +38,7 @@ while True:
         students.append(Student(sid, name, dept, sem, marks))
         print("Student Created Successfully")
 
-    # ---------- ADD FACULTY ----------
+# add faculty
     elif choice == "2":
         fid = input("Faculty ID: ")
         name = input("Name: ")
@@ -48,7 +48,7 @@ while True:
         faculty_list.append(Faculty(fid, name, dept, sal))
         print("Faculty Created Successfully")
 
-    # ---------- ADD COURSE ----------
+# add course
     elif choice == "3":
         if faculty_list:
             code = input("Course Code: ")
@@ -60,7 +60,7 @@ while True:
         else:
             print("Add Faculty First")
 
-    # ---------- CALCULATE PERFORMANCE ----------
+    #         performance calculate
     elif choice == "4":
         if students:
             avg, grade = students[0].calculate_performance()
@@ -72,10 +72,10 @@ while True:
         else:
             print("No students available")
 
-    # ---------- GENERATE REPORTS ----------
+# generate reports
     elif choice == "5":
 
-        # ---- STUDENT REPORT ----
+        # student report
         print("\nSTUDENT DETAILS")
         print("--------------------------------")
         for s in students:
@@ -85,7 +85,7 @@ while True:
             print(f"Semester  : {s.semester}")
             print("--------------------------------")
 
-        # ---- FACULTY REPORT ----
+# faculty report
         print("\nFACULTY DETAILS")
         print("--------------------------------")
         for f in faculty_list:
@@ -94,7 +94,7 @@ while True:
             print(f"Department: {f.department}")
             print("--------------------------------")
 
-        # ---- COURSE REPORT ----
+# course report
         print("\nCOURSE DETAILS")
         print("--------------------------------")
         for c in courses:
@@ -104,11 +104,11 @@ while True:
             print(f"Faculty     : {c.faculty.name}")
             print("--------------------------------")
 
-        # ---- FILE OUTPUTS ----
+# file output
         save_students_json(students)
         generate_csv(students)
 
-        # ---- GENERATOR OUTPUT ----
+# generator output
         print("\nStudent Records Generator")
         for rec in student_generator(students):
             print("Fetching Student Records...")
@@ -121,7 +121,7 @@ while True:
             print("---------------------------")
             print(rec1)
 
-    # ---------- EXIT ----------
+    # exit
     elif choice == "6":
         print("Thank you for using Smart University Management System")
         break

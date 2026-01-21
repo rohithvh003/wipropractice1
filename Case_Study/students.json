@@ -30,5 +30,14 @@
             78,
             75
         ]
+    },
+    {
+        "id": "101",
+        "name": "raj",
+        "department": "cse",
+        "semester": 4,
+        "marks": [
+            75
+        ]
     }
 ]
