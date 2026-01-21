@@ -21,6 +21,14 @@ while True:
     # ---------- ADD STUDENT ----------
     if choice == "1":
         sid = input("ID: ")
+        duplicate = False
+        for s in students:
+            if s.pid ==sid:
+                duplicate = True
+                break
+        if duplicate:
+            print("Error: student ID already exists")
+
         name = input("Name: ")
         dept = input("Department: ")
         sem = int(input("Semester: "))
@@ -100,8 +108,10 @@ while True:
         generate_csv(students)
 
         # ---- GENERATOR OUTPUT ----
-        print("\nSTUDENT RECORDS (Generator)")
+        print("\nStudent Records Generator)")
         for rec in student_generator(students):
+            print("Fetching Student Records...")
+            print("---------------------------")
             print(rec)
 
     # ---------- EXIT ----------
