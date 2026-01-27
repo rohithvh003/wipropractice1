@@ -112,7 +112,7 @@ while True:
         print("\nStudent Records Generator")
         for rec in student_generator(students):
             print("Fetching Student Records...")
-            print("---------------------------")
+            print("-"*28)
             print(rec)
 
         print("\nFaculty Records Generator")

@@ -39,5 +39,17 @@
         "marks": [
             75
         ]
+    },
+    {
+        "id": "101",
+        "name": "Rohith",
+        "department": "CSE",
+        "semester": 8,
+        "marks": [
+            78,
+            96,
+            85,
+            74
+        ]
     }
 ]
