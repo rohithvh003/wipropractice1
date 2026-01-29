@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-29T21:56:23.896921" rpa="false" schemaversion="5">
+<suite id="s1" name="day13 Q1 open" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day13\day13_Q1_open.robot">
+<test id="s1-t1" name="Open Browser And Verify Title" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-29T21:56:24.475119" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-29T21:56:24.474579" elapsed="13.191750"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-29T21:56:37.685773" level="INFO">Page title is 'Google'.</msg>
+<arg>${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-29T21:56:37.667789" elapsed="0.018240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-29T21:56:42.689758" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-29T21:56:37.686953" elapsed="5.003120"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-29T21:56:42.856314" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-29T21:56:42.690872" elapsed="0.165654"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-29T21:56:42.857108" elapsed="2.483551"/>
+</kw>
+<status status="PASS" start="2026-01-29T21:56:24.472782" elapsed="20.868504"/>
+</test>
+<status status="PASS" start="2026-01-29T21:56:23.900293" elapsed="21.442298"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="day13 Q1 open" id="s1" pass="1" fail="0" skip="0">day13 Q1 open</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

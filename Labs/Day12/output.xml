@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-29T21:51:54.981065" rpa="false" schemaversion="5">
+<suite id="s1" name="day12 Q2 Verify" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day12\day12_Q2_Verify.robot">
+<test id="s1-t1" name="Verify Environment Setup" line="7">
+<kw name="Run" owner="OperatingSystem">
+<msg time="2026-01-29T21:51:55.543876" level="INFO">Running command 'python --version 2&gt;&amp;1'.</msg>
+<arg>python --version</arg>
+<doc>_This keyword is considered deprecated. Use the
+[http://robotframework.org/robotframework/latest/libraries/Process.html|
+Process] library instead._</doc>
+<status status="PASS" start="2026-01-29T21:51:55.530976" elapsed="0.059584"/>
+</kw>
+<kw name="Run" owner="OperatingSystem">
+<msg time="2026-01-29T21:51:55.604122" level="INFO">Running command 'robot --version 2&gt;&amp;1'.</msg>
+<arg>robot --version</arg>
+<doc>_This keyword is considered deprecated. Use the
+[http://robotframework.org/robotframework/latest/libraries/Process.html|
+Process] library instead._</doc>
+<status status="PASS" start="2026-01-29T21:51:55.591131" elapsed="0.803628"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-01-29T21:51:56.396051" level="INFO">${version} = 7.4.1</msg>
+<var>${version}</var>
+<arg>__import__('robot').version.get_version()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-01-29T21:51:56.395300" elapsed="0.000800"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Framework Version: ${version}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-29T21:51:56.396837" elapsed="0.000922"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T21:51:56.398879" level="INFO">All dependencies are installed correctly</msg>
+<arg>All dependencies are installed correctly</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T21:51:56.398324" elapsed="0.000681"/>
+</kw>
+<status status="PASS" start="2026-01-29T21:51:55.528748" elapsed="0.870779"/>
+</test>
+<status status="PASS" start="2026-01-29T21:51:54.984847" elapsed="1.416001"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="day12 Q2 Verify" id="s1" pass="1" fail="0" skip="0">day12 Q2 Verify</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

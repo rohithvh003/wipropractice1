@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-01-29T21:36:32.749299" rpa="false" schemaversion="5">
+<suite id="s1" name="pythonProjectwipro" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro">
+<suite id="s1-s1" name="Labs" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs">
+<suite id="s1-s1-s1" name="Day12" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day12">
+<suite id="s1-s1-s1-s1" name="day12 Q1" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day12\day12_Q1.robot">
+<test id="s1-s1-s1-s1-t1" name="first" line="4">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-29T21:36:32.889052" level="INFO">Hello World</msg>
+<arg>Hello World</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-29T21:36:32.889052" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2026-01-29T21:36:32.883054" elapsed="0.007516"/>
+</test>
+<status status="PASS" start="2026-01-29T21:36:32.873039" elapsed="0.030556"/>
+</suite>
+<status status="PASS" start="2026-01-29T21:36:32.866028" elapsed="0.044095"/>
+</suite>
+<status status="PASS" start="2026-01-29T21:36:32.858507" elapsed="0.058622"/>
+</suite>
+<status status="PASS" start="2026-01-29T21:36:32.763836" elapsed="0.158286"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="pythonProjectwipro" id="s1" pass="1" fail="0" skip="0">pythonProjectwipro</stat>
+<stat name="Labs" id="s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs</stat>
+<stat name="Day12" id="s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs.Day12</stat>
+<stat name="day12 Q1" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs.Day12.day12 Q1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-29T21:36:32.724740" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Jan2026.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
