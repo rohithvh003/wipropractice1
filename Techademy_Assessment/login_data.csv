@@ -1,0 +1,4 @@
+"username,password,expected"
+"admin,admin123,success"
+"user1,wrongpass,failure"
+"test,test123,success"

@@ -1,0 +1,4 @@
+username,password,result
+admin,admin123,pass
+test,test123,pass
+user,wrong,fail

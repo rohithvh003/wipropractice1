@@ -1,25 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-01-29T21:36:32.749299" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-01T18:11:22.231280" rpa="false" schemaversion="5">
 <suite id="s1" name="pythonProjectwipro" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro">
-<suite id="s1-s1" name="Labs" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs">
-<suite id="s1-s1-s1" name="Day12" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day12">
-<suite id="s1-s1-s1-s1" name="day12 Q1" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Labs\Day12\day12_Q1.robot">
-<test id="s1-s1-s1-s1-t1" name="first" line="4">
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-01-29T21:36:32.889052" level="INFO">Hello World</msg>
-<arg>Hello World</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-01-29T21:36:32.889052" elapsed="0.001002"/>
+<suite id="s1-s1" name="Techademy Assessment" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment">
+<suite id="s1-s1-s1" name="Day12" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day12">
+<suite id="s1-s1-s1-s1" name="Day12 Q2" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day12\Day12_Q2.robot">
+<test id="s1-s1-s1-s1-t1" name="Check Environment" line="6">
+<kw name="Run Process" owner="Process">
+<msg time="2026-02-01T18:11:23.175829" level="INFO">Starting process:
+python --version</msg>
+<msg time="2026-02-01T18:11:23.187831" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-02-01T18:11:23.241880" level="INFO">Process completed.</msg>
+<msg time="2026-02-01T18:11:23.242882" level="INFO">${py} = &lt;result object with rc 0&gt;</msg>
+<var>${py}</var>
+<arg>python</arg>
+<arg>--version</arg>
+<arg>stdout=YES</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-02-01T18:11:23.173827" elapsed="0.069055"/>
 </kw>
-<status status="PASS" start="2026-01-29T21:36:32.883054" elapsed="0.007516"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Python Installed: ${py.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:11:23.243882" elapsed="0.005611"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-02-01T18:11:23.252447" level="INFO">Starting process:
+robot --version</msg>
+<msg time="2026-02-01T18:11:23.262066" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-02-01T18:11:24.630697" level="INFO">Process completed.</msg>
+<msg time="2026-02-01T18:11:24.631662" level="INFO">${rb} = &lt;result object with rc 251&gt;</msg>
+<var>${rb}</var>
+<arg>robot</arg>
+<arg>--version</arg>
+<arg>stdout=YES</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-02-01T18:11:23.250449" elapsed="1.381213"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Installed: ${rb.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:11:24.632661" elapsed="0.006039"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-02-01T18:11:24.639885" level="INFO">${ver} = 7.4.1</msg>
+<var>${ver}</var>
+<arg>__import__('robot').__version__</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-02-01T18:11:24.638700" elapsed="0.002182"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Framework Version: ${ver}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:11:24.641882" elapsed="0.001001"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SeleniumLibrary Imported Successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:11:24.642883" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2026-02-01T18:11:23.166732" elapsed="1.478114"/>
 </test>
-<status status="PASS" start="2026-01-29T21:36:32.873039" elapsed="0.030556"/>
+<status status="PASS" start="2026-02-01T18:11:22.399667" elapsed="2.249179"/>
 </suite>
-<status status="PASS" start="2026-01-29T21:36:32.866028" elapsed="0.044095"/>
+<status status="PASS" start="2026-02-01T18:11:22.391634" elapsed="2.262819"/>
 </suite>
-<status status="PASS" start="2026-01-29T21:36:32.858507" elapsed="0.058622"/>
+<status status="PASS" start="2026-02-01T18:11:22.382998" elapsed="2.275416"/>
 </suite>
-<status status="PASS" start="2026-01-29T21:36:32.763836" elapsed="0.158286"/>
+<status status="PASS" start="2026-02-01T18:11:22.285238" elapsed="2.376206"/>
 </suite>
 <statistics>
 <total>
@@ -29,12 +76,12 @@
 </tag>
 <suite>
 <stat name="pythonProjectwipro" id="s1" pass="1" fail="0" skip="0">pythonProjectwipro</stat>
-<stat name="Labs" id="s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs</stat>
-<stat name="Day12" id="s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs.Day12</stat>
-<stat name="day12 Q1" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Labs.Day12.day12 Q1</stat>
+<stat name="Techademy Assessment" id="s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment</stat>
+<stat name="Day12" id="s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment.Day12</stat>
+<stat name="Day12 Q2" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment.Day12.Day12 Q2</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-29T21:36:32.724740" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Jan2026.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-02-01T18:11:22.184688" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Jan2026.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
