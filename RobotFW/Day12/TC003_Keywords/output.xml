@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-03T17:24:09.650640" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc003" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day12\TC003_Keywords\tc003.robot">
+<test id="s1-t1" name="Google Search Test" line="9">
+<kw name="Open application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-03T17:24:10.422069" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-03T17:24:10.421062" elapsed="4.586056"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-03T17:24:15.012296" elapsed="0.309044"/>
+</kw>
+<status status="PASS" start="2026-02-03T17:24:10.418517" elapsed="4.903476"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-03T17:24:15.431765" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-03T17:24:15.323059" elapsed="0.109172"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-03T17:24:15.435358" elapsed="2.843361"/>
+</kw>
+<status status="PASS" start="2026-02-03T17:24:10.416883" elapsed="7.862386"/>
+</test>
+<status status="PASS" start="2026-02-03T17:24:09.655744" elapsed="8.625272"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tc003" id="s1" pass="1" fail="0" skip="0">Tc003</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

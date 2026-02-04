@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-02T17:00:23.644409" rpa="false" schemaversion="5">
+<suite id="s1" name="Setup Teardown" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day14\setup_teardown.robot">
+<kw name="Suite Level Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T17:00:24.528547" level="INFO">===== Suite Setup Started =====</msg>
+<arg>===== Suite Setup Started =====</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T17:00:24.528037" elapsed="0.000639"/>
+</kw>
+<status status="PASS" start="2026-02-02T17:00:24.526752" elapsed="0.002138"/>
+</kw>
+<test id="s1-t1" name="Open Example Site" line="14">
+<kw name="Test Level Setup" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T17:00:24.532184" level="INFO">==== Test Setup Started ======</msg>
+<arg>==== Test Setup Started ======</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T17:00:24.531621" elapsed="0.000656"/>
+</kw>
+<status status="PASS" start="2026-02-02T17:00:24.530545" elapsed="0.001851"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T17:00:24.533509" level="INFO">Opening browser 'chrome' to base url 'https://example.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T17:00:24.533080" elapsed="4.508117"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-02T17:00:29.126305" level="INFO">Page title is 'Example Domain'.</msg>
+<arg>Example Domain</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-02T17:00:29.047207" elapsed="0.079563"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T17:00:34.137715" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T17:00:29.134888" elapsed="5.003190"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T17:00:34.139049" elapsed="3.510664"/>
+</kw>
+<kw name="Test Level Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T17:00:37.659054" level="INFO">==== Test Teardown Completed =====</msg>
+<arg>==== Test Teardown Completed =====</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T17:00:37.657904" elapsed="0.001450"/>
+</kw>
+<status status="PASS" start="2026-02-02T17:00:37.656446" elapsed="0.003180"/>
+</kw>
+<tag>regression</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-02-02T17:00:24.529032" elapsed="13.140018"/>
+</test>
+<kw name="Suite Level Teardown" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T17:00:37.675605" level="INFO">===== Suite Teardown Completed =====</msg>
+<arg>===== Suite Teardown Completed =====</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T17:00:37.674620" elapsed="0.001164"/>
+</kw>
+<status status="PASS" start="2026-02-02T17:00:37.673600" elapsed="0.002419"/>
+</kw>
+<status status="PASS" start="2026-02-02T17:00:23.648310" elapsed="14.027962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Setup Teardown" id="s1" pass="1" fail="0" skip="0">Setup Teardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

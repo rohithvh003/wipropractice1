@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-02T14:12:53.896387" rpa="false" schemaversion="5">
+<suite id="s1" name="TC009 Flask" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFw\day14\flask\TC009_Flask.robot">
+<test id="s1-t1" name="Verify Get_user" line="11">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.325803" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T14:12:54.325048" elapsed="0.001211"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.352466" level="INFO">GET Request : url=http://127.0.0.1:5000/users 
+ path_url=/users 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-02T14:12:54.352698" level="INFO">GET Response : url=http://127.0.0.1:5000/users 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '585', 'Connection': 'close'} 
+ body=[
+  {
+    "id": 1,
+    "name": "Raja"
+  },
+  {
+    "id": 2,
+    "name": "Rama"
+  },
+  {
+    "id": 4,
+    "name": " karthik"
+  },
+  {
+    "id": 5,
+    "name": " karthik"
+  },
+  {
+    "id": 6,
+    "name": " karthik"
+  },
+  {
+    "id": 7,
+    "name": " karthik"
+  },
+  {
+    "id": 8,
+    "name": " karthik"
+  },
+  {
+    "id": 9,
+    "name": " karthik"
+  },
+  {
+    "id": 10,
+    "name": " karthik"
+  },
+  {
+    "id": 11,
+    "name": " karthik"
+  },
+  {
+    "id": 12,
+    "name": " karthik"
+  },
+  {
+    "id": 12,
+    "name": " karthik"
+  },
+  {
+    "id": 13,
+    "name": " karthik"
+  }
+]
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.352963" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.326802" elapsed="0.026203"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.353637" elapsed="0.000539"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.354944" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.356707" level="INFO">To JSON using : content=[
+  {
+    "id": 1,
+    "name": "Raja"
+  },
+  {
+    "id": 2,
+    "name": "Rama"
+  },
+  {
+    "id": 4,
+    "name": " karthik"
+  },
+  {
+    "id": 5,
+    "name": " karthik"
+  },
+  {
+    "id": 6,
+    "name": " karthik"
+  },
+  {
+    "id": 7,
+    "name": " karthik"
+  },
+  {
+    "id": 8,
+    "name": " karthik"
+  },
+  {
+    "id": 9,
+    "name": " karthik"
+  },
+  {
+    "id": 10,
+    "name": " karthik"
+  },
+  {
+    "id": 11,
+    "name": " karthik"
+  },
+  {
+    "id": 12,
+    "name": " karthik"
+  },
+  {
+    "id": 12,
+    "name": " karthik"
+  },
+  {
+    "id": 13,
+    "name": " karthik"
+  }
+]
+ </msg>
+<msg time="2026-02-02T14:12:54.356801" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.357960" level="INFO">${resp.json()} = [{'id': 1, 'name': 'Raja'}, {'id': 2, 'name': 'Rama'}, {'id': 4, 'name': ' karthik'}, {'id': 5, 'name': ' karthik'}, {'id': 6, 'name': ' karthik'}, {'id': 7, 'name': ' karthik'}, {'id': 8, 'name': ' k...</msg>
+<var>${resp.json()}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.354855" elapsed="0.003184"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.359528" level="INFO">[{'id': 1, 'name': 'Raja'}, {'id': 2, 'name': 'Rama'}, {'id': 4, 'name': ' karthik'}, {'id': 5, 'name': ' karthik'}, {'id': 6, 'name': ' karthik'}, {'id': 7, 'name': ' karthik'}, {'id': 8, 'name': ' karthik'}, {'id': 9, 'name': ' karthik'}, {'id': 10, 'name': ' karthik'}, {'id': 11, 'name': ' karthik'}, {'id': 12, 'name': ' karthik'}, {'id': 12, 'name': ' karthik'}, {'id': 13, 'name': ' karthik'}]=</msg>
+<arg>${resp.json()}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.358661" elapsed="0.001247"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.323269" elapsed="0.037087"/>
+</test>
+<test id="s1-t2" name="Verify Get Single_user" line="19">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.362757" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T14:12:54.362331" elapsed="0.000815"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.368775" level="INFO">GET Request : url=http://127.0.0.1:5000/users/2 
+ path_url=/users/2 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-02T14:12:54.368916" level="INFO">GET Response : url=http://127.0.0.1:5000/users/2 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '32', 'Connection': 'close'} 
+ body={
+  "id": 2,
+  "name": "Rama"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.369118" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users/2</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.363680" elapsed="0.005474"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.369700" elapsed="0.000438"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.370599" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.372942" level="INFO">To JSON using : content={
+  "id": 2,
+  "name": "Rama"
+}
+ </msg>
+<msg time="2026-02-02T14:12:54.373113" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.373482" level="INFO">${res_json} = {'id': 2, 'name': 'Rama'}</msg>
+<var>${res_json}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.370535" elapsed="0.003015"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.376181" level="INFO">{'id': 2, 'name': 'Rama'}=</msg>
+<arg>${res_json}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.374959" elapsed="0.001811"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.361606" elapsed="0.015701"/>
+</test>
+<test id="s1-t3" name="Create new user" line="26">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.381116" level="INFO">${data} = {'name': ' karthik'}</msg>
+<var>${data}</var>
+<arg>name= karthik</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.379876" elapsed="0.001407"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.391556" level="INFO">POST Request : url=http://127.0.0.1:5000/users 
+ path_url=/users 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '20', 'Content-Type': 'application/json'} 
+ body=b'{"name": " karthik"}' 
+ </msg>
+<msg time="2026-02-02T14:12:54.391765" level="INFO">POST Response : url=http://127.0.0.1:5000/users 
+ status=201, reason=CREATED 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '37', 'Connection': 'close'} 
+ body={
+  "id": 14,
+  "name": " karthik"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.392108" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users</arg>
+<arg>json=${data}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.381951" elapsed="0.010201"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.392744" elapsed="0.000408"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.393897" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.395607" level="INFO">To JSON using : content={
+  "id": 14,
+  "name": " karthik"
+}
+ </msg>
+<msg time="2026-02-02T14:12:54.395811" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.396102" level="INFO">${res_json} = {'id': 14, 'name': ' karthik'}</msg>
+<var>${res_json}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.393828" elapsed="0.002312"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.397418" level="INFO">{'id': 14, 'name': ' karthik'}=</msg>
+<arg>${res_json}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.396832" elapsed="0.000994"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.378989" elapsed="0.019329"/>
+</test>
+<test id="s1-t4" name="Verify user-not-found" line="33">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.409485" level="INFO">GET Request : url=http://127.0.0.1:5000/users/4 
+ path_url=/users/4 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-02T14:12:54.409727" level="INFO">GET Response : url=http://127.0.0.1:5000/users/4 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '36', 'Connection': 'close'} 
+ body={
+  "id": 4,
+  "name": " karthik"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.410104" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>Mysession</arg>
+<arg>/users/4</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.400134" elapsed="0.010030"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.411346" elapsed="0.000556"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.412460" elapsed="0.001837"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.399212" elapsed="0.015655"/>
+</test>
+<test id="s1-t5" name="update user" line="40">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.417043" level="INFO">${data} = {'name': ' mahesh'}</msg>
+<var>${data}</var>
+<arg>name= mahesh</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.416290" elapsed="0.000808"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.426173" level="INFO">PUT Request : url=http://127.0.0.1:5000/users/2 
+ path_url=/users/2 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '19', 'Content-Type': 'application/json'} 
+ body=b'{"name": " mahesh"}' 
+ </msg>
+<msg time="2026-02-02T14:12:54.426319" level="INFO">PUT Response : url=http://127.0.0.1:5000/users/2 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '35', 'Connection': 'close'} 
+ body={
+  "id": 2,
+  "name": " mahesh"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.426552" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users/2</arg>
+<arg>json=${data}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.417816" elapsed="0.008774"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.427249" elapsed="0.000485"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.428306" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.429729" level="INFO">To JSON using : content={
+  "id": 2,
+  "name": " mahesh"
+}
+ </msg>
+<msg time="2026-02-02T14:12:54.429785" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.429918" level="INFO">${res_json} = {'id': 2, 'name': ' mahesh'}</msg>
+<var>${res_json}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.428237" elapsed="0.001727"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.431693" level="INFO">{'id': 2, 'name': ' mahesh'}=</msg>
+<arg>${res_json}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.430729" elapsed="0.001333"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.415647" elapsed="0.016908"/>
+</test>
+<test id="s1-t6" name="patch user" line="47">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.434506" level="INFO">${data} = {'name': ' mahesh patched'}</msg>
+<var>${data}</var>
+<arg>name= mahesh patched</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.433971" elapsed="0.000585"/>
+</kw>
+<kw name="PATCH On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.448335" level="INFO">PATCH Request : url=http://127.0.0.1:5000/users/2 
+ path_url=/users/2 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '27', 'Content-Type': 'application/json'} 
+ body=b'{"name": " mahesh patched"}' 
+ </msg>
+<msg time="2026-02-02T14:12:54.448733" level="INFO">PATCH Response : url=http://127.0.0.1:5000/users/2 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '43', 'Connection': 'close'} 
+ body={
+  "id": 2,
+  "name": " mahesh patched"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.449167" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users/2</arg>
+<arg>json=${data}</arg>
+<doc>Sends a PATCH request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.435314" elapsed="0.013944"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.450562" elapsed="0.000687"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.452411" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.454639" level="INFO">To JSON using : content={
+  "id": 2,
+  "name": " mahesh patched"
+}
+ </msg>
+<msg time="2026-02-02T14:12:54.454743" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.454950" level="INFO">${res_json} = {'id': 2, 'name': ' mahesh patched'}</msg>
+<var>${res_json}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.452271" elapsed="0.002728"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.457921" level="INFO">{'id': 2, 'name': ' mahesh patched'}=</msg>
+<arg>${res_json}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.455965" elapsed="0.002654"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.433366" elapsed="0.025867"/>
+</test>
+<test id="s1-t7" name="Delete user" line="54">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.462533" level="INFO">${data} = {'name': ' mahesh patched'}</msg>
+<var>${data}</var>
+<arg>name= mahesh patched</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.461571" elapsed="0.001036"/>
+</kw>
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.470335" level="INFO">DELETE Request : url=http://127.0.0.1:5000/users/2 
+ path_url=/users/2 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '27', 'Content-Type': 'application/json'} 
+ body=b'{"name": " mahesh patched"}' 
+ </msg>
+<msg time="2026-02-02T14:12:54.470556" level="INFO">DELETE Response : url=http://127.0.0.1:5000/users/2 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.12.5', 'Date': 'Mon, 02 Feb 2026 08:42:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '45', 'Connection': 'close'} 
+ body={
+  "message": "user deleted successfully"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:12:54.470962" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users/2</arg>
+<arg>json=${data}</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.463546" elapsed="0.007476"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.472432" elapsed="0.000685"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-02T14:12:54.476088" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.479058" level="INFO">To JSON using : content={
+  "message": "user deleted successfully"
+}
+ </msg>
+<msg time="2026-02-02T14:12:54.479146" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-02T14:12:54.479326" level="INFO">${res_json} = {'message': 'user deleted successfully'}</msg>
+<var>${res_json}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.475970" elapsed="0.003389"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:12:54.480690" level="INFO">{'message': 'user deleted successfully'}=</msg>
+<arg>${res_json}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:12:54.479992" elapsed="0.001151"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:12:54.460527" elapsed="0.021325"/>
+</test>
+<status status="PASS" start="2026-02-02T14:12:53.902358" elapsed="0.581258"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC009 Flask" id="s1" pass="7" fail="0" skip="0">TC009 Flask</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-02T14:12:54.320296" level="ERROR">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFw\day14\flask\TC009_Flask.robot' on line 3: Importing library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123\Scripts\robot.exe
+  C:\Users\Rohith\AppData\Local\Programs\Python\Python314\python314.zip
+  C:\Users\Rohith\AppData\Local\Programs\Python\Python314\DLLs
+  C:\Users\Rohith\AppData\Local\Programs\Python\Python314\Lib
+  C:\Users\Rohith\AppData\Local\Programs\Python\Python314
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123\Lib\site-packages
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123\Lib\site-packages\win32
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123\Lib\site-packages\win32\lib
+  C:\Users\Rohith\PycharmProjects\pythonProjectwipro\venv123\Lib\site-packages\Pythonwin</msg>
+<msg time="2026-02-02T14:12:54.354944" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.370599" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.393897" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.428306" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.452411" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-02T14:12:54.476088" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+</errors>
+</robot>

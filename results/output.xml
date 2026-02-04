@@ -1,87 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-01T18:11:22.231280" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-03T17:46:05.238209" rpa="false" schemaversion="5">
 <suite id="s1" name="pythonProjectwipro" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro">
-<suite id="s1-s1" name="Techademy Assessment" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment">
-<suite id="s1-s1-s1" name="Day12" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day12">
-<suite id="s1-s1-s1-s1" name="Day12 Q2" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day12\Day12_Q2.robot">
-<test id="s1-s1-s1-s1-t1" name="Check Environment" line="6">
-<kw name="Run Process" owner="Process">
-<msg time="2026-02-01T18:11:23.175829" level="INFO">Starting process:
-python --version</msg>
-<msg time="2026-02-01T18:11:23.187831" level="INFO">Waiting for process to complete.</msg>
-<msg time="2026-02-01T18:11:23.241880" level="INFO">Process completed.</msg>
-<msg time="2026-02-01T18:11:23.242882" level="INFO">${py} = &lt;result object with rc 0&gt;</msg>
-<var>${py}</var>
-<arg>python</arg>
-<arg>--version</arg>
-<arg>stdout=YES</arg>
-<doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2026-02-01T18:11:23.173827" elapsed="0.069055"/>
+<suite id="s1-s1" name="RobotFW" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW">
+<suite id="s1-s1-s1" name="Day13" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day13">
+<suite id="s1-s1-s1-s1" name="TC002 Excel" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day13\TC002_Excel">
+<suite id="s1-s1-s1-s1-s1" name="Tc002" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day13\TC002_Excel\tc002.robot">
+<kw name="Open Orangehrm" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-03T17:46:12.855553" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-03T17:46:12.854540" elapsed="7.802474"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Python Installed: ${py.stdout}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-01T18:11:23.243882" elapsed="0.005611"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-03T17:46:20.658050" elapsed="0.058741"/>
 </kw>
-<kw name="Run Process" owner="Process">
-<msg time="2026-02-01T18:11:23.252447" level="INFO">Starting process:
-robot --version</msg>
-<msg time="2026-02-01T18:11:23.262066" level="INFO">Waiting for process to complete.</msg>
-<msg time="2026-02-01T18:11:24.630697" level="INFO">Process completed.</msg>
-<msg time="2026-02-01T18:11:24.631662" level="INFO">${rb} = &lt;result object with rc 251&gt;</msg>
-<var>${rb}</var>
-<arg>robot</arg>
-<arg>--version</arg>
-<arg>stdout=YES</arg>
-<doc>Runs a process and waits for it to complete.</doc>
-<status status="PASS" start="2026-02-01T18:11:23.250449" elapsed="1.381213"/>
+<status status="PASS" start="2026-02-03T17:46:12.851543" elapsed="7.865248"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Robot Installed: ${rb.stdout}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-01T18:11:24.632661" elapsed="0.006039"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-02-01T18:11:24.639885" level="INFO">${ver} = 7.4.1</msg>
-<var>${ver}</var>
-<arg>__import__('robot').__version__</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-02-01T18:11:24.638700" elapsed="0.002182"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Robot Framework Version: ${ver}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-01T18:11:24.641882" elapsed="0.001001"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>SeleniumLibrary Imported Successfully</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-01T18:11:24.642883" elapsed="0.000999"/>
-</kw>
-<status status="PASS" start="2026-02-01T18:11:23.166732" elapsed="1.478114"/>
+<test id="s1-s1-s1-s1-s1-t1" name="Login with user from Excel" line="31">
+<tag>DDT</tag>
+<status status="FAIL" start="2026-02-03T17:46:20.717778" elapsed="0.007695">Test cannot be empty.</status>
 </test>
-<status status="PASS" start="2026-02-01T18:11:22.399667" elapsed="2.249179"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-02-03T17:46:20.745543" elapsed="2.468768"/>
+</kw>
+<status status="FAIL" start="2026-02-03T17:46:05.430653" elapsed="17.783658"/>
 </suite>
-<status status="PASS" start="2026-02-01T18:11:22.391634" elapsed="2.262819"/>
+<status status="FAIL" start="2026-02-03T17:46:05.420631" elapsed="17.799227"/>
 </suite>
-<status status="PASS" start="2026-02-01T18:11:22.382998" elapsed="2.275416"/>
+<status status="FAIL" start="2026-02-03T17:46:05.411868" elapsed="17.811994"/>
 </suite>
-<status status="PASS" start="2026-02-01T18:11:22.285238" elapsed="2.376206"/>
+<status status="FAIL" start="2026-02-03T17:46:05.402302" elapsed="17.823556"/>
+</suite>
+<status status="FAIL" start="2026-02-03T17:46:05.262638" elapsed="17.966755"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">DDT</stat>
 </tag>
 <suite>
-<stat name="pythonProjectwipro" id="s1" pass="1" fail="0" skip="0">pythonProjectwipro</stat>
-<stat name="Techademy Assessment" id="s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment</stat>
-<stat name="Day12" id="s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment.Day12</stat>
-<stat name="Day12 Q2" id="s1-s1-s1-s1" pass="1" fail="0" skip="0">pythonProjectwipro.Techademy Assessment.Day12.Day12 Q2</stat>
+<stat name="pythonProjectwipro" id="s1" pass="0" fail="1" skip="0">pythonProjectwipro</stat>
+<stat name="RobotFW" id="s1-s1" pass="0" fail="1" skip="0">pythonProjectwipro.RobotFW</stat>
+<stat name="Day13" id="s1-s1-s1" pass="0" fail="1" skip="0">pythonProjectwipro.RobotFW.Day13</stat>
+<stat name="TC002 Excel" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">pythonProjectwipro.RobotFW.Day13.TC002 Excel</stat>
+<stat name="Tc002" id="s1-s1-s1-s1-s1" pass="0" fail="1" skip="0">pythonProjectwipro.RobotFW.Day13.TC002 Excel.Tc002</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-02-01T18:11:22.184688" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Jan2026.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-02-03T17:46:05.122004" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Jan2026.robot' on line 55: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-02-03T17:46:12.518114" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day13\TC002_Excel\tc002.robot", line 0</msg>
+<msg time="2026-02-03T17:46:12.520133" level="ERROR">In source file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\RobotFW\Day13\TC002_Excel/Datasheet.xlsx", line 0</msg>
+<msg time="2026-02-03T17:46:12.847499" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: BadZipFile: File is not a zip file</msg>
 </errors>
 </robot>

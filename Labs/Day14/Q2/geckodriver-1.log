@@ -1,0 +1,72 @@
+1770036903482	geckodriver	INFO	Listening on 127.0.0.1:53950
+1770036906711	mozrunner::runner	INFO	Running command: "C:\\Users\\Rohith\\.cache\\selenium\\firefox\\win64\\147.0.2\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Rohith\\AppData\\Local\\Temp\\rust_mozprofile6oM4hV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1770036907378	Marionette	INFO	Marionette enabled
+1770036907560	Marionette	INFO	Listening on port 56991
+WebDriver BiDi listening on ws://127.0.0.1:53951
+Read port: 56991
+1770036907776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 2264
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 436: TypeError: c(...).setup is not a function
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 187: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 187: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://jsc.mgid.com/site/884765.js, line 187: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=4e61r1, line 857: Script terminated by timeout at:
+k.zj@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=4e61r1:857:30
+get@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=4e61r1:855:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=4e61r1:855:87
+k.Qp/c/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&cx=c&gtm=4e61r1:855:410
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 50: Script terminated by timeout at:
+Qa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:534
+Ra@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:436
+Lh/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:146:403
+oc.prototype.complete@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:408
+n.Yc@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:97
+n.complete@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:628
+n.Yc@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:97
+n.complete@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:628
+n.complete@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:86:93
+jd.prototype.connect/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:187
+M/this.Yc@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:1148
+n.complete@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:628
+Lh/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:146:431
+Sa@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:339
+Pa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:127
+Ra@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:483
+Lh/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:146:293
+oc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.Vd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:515
+Na.prototype.jc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:524
+oc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.Vd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:515
+Na.prototype.jc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:524
+oc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.Vd@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:95:477
+
+JavaScript warning: https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:163,%22origin%22:%22publishertagids%22,%22requestId%22:%220.9303304872840328%22}, line 13: Script terminated by timeout at:
+u.prototype.flushEventQueue@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:163,%22origin%22:%22publishertagids%22,%22requestId%22:%220.9303304872840328%22}:13:3137
+u/<@https://gumi.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:163,%22origin%22:%22publishertagids%22,%22requestId%22:%220.9303304872840328%22}:13:3642
+
+1770038628416	Marionette	INFO	Stopped listening on port 56991
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
