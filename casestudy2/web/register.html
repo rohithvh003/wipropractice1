@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Registration</title>
+</head>
+<body>
+
+<h2>Register Patient</h2>
+
+<form action="http://127.0.0.1:5000/api/patients" method="post">
+
+    <label for="name">Patient Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br><br>
+
+    Gender:
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <label for="contact">Contact Number:</label>
+    <input type="text" id="contact" name="contact" required>
+    <br><br>
+
+    <label for="disease">Disease:</label>
+    <input type="text" id="disease" name="disease" required>
+    <br><br>
+
+    <label for="doctor">Doctor Assigned:</label>
+    <select id="doctor" name="doctor" required>
+        <option value="">--Select Doctor--</option>
+        <option value="Dr. Smith">Dr. Smith</option>
+        <option value="Dr. John">Dr. John</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+from time import sleep
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+from selenium.webdriver.support.ui import Select
+
+driver=webdriver.Firefox()
+driver.get("https://www.letcode.in/window")
+time.sleep(2)
+driver.find_element(By.ID,"multi").click()
+windows=driver.window_handles
+for child in windows:
+    driver.switch_to.window(child)
+    time.sleep(2)
+    print("title:",driver.current_url)
