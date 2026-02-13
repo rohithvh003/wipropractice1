@@ -1,0 +1,16 @@
+[
+  {
+    "id": 201,
+    "movie_name": "Avatar",
+    "language": "English",
+    "duration": "3h",
+    "price": 300
+  },
+  {
+    "id": 202,
+    "movie_name": "Jailer",
+    "language": "Tamil",
+    "duration": "2h 40m",
+    "price": 200
+  }
+]

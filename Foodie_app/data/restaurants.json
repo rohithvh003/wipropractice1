@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Rameshvaram Cafe",
+        "category": "Indian",
+        "location": "Chennai Updated",
+        "contact": "75841298",
+        "active": true,
+        "approved": true
+    }
+]
