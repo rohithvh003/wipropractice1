@@ -20,8 +20,6 @@ def write_file(filename, data):
     with open(path, "w") as f:
         json.dump(data, f, indent=4)
 
-
-# UNIVERSAL ID GENERATOR
 def generate_id(data, key="id"):
     if not data:
         return 1

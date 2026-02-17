@@ -5,11 +5,6 @@ app = Flask(__name__)
 
 print("APP STARTED")
 
-
-# =====================================================
-# HELPERS
-# =====================================================
-
 def get_restaurant_name(rid):
     restaurants = read_file("restaurants.json")
     for r in restaurants:
@@ -25,10 +20,8 @@ def get_user_name(uid):
             return u.get("name")
     return None
 
+# Restaurant Module
 
-# =====================================================
-# RESTAURANT MODULE
-# =====================================================
 
 @app.route("/api/v1/restaurants", methods=["POST"])
 def add_restaurant():
@@ -95,10 +88,8 @@ def disable_restaurant(rid):
 
     return jsonify({"error": "Not found"}), 404
 
+# Dish Module
 
-# =====================================================
-# DISH MODULE
-# =====================================================
 
 @app.route("/api/v1/restaurants/<int:rid>/dishes", methods=["POST"])
 def add_dish(rid):
@@ -167,10 +158,7 @@ def delete_dish(did):
 
     return jsonify({"error": "Not found"}), 404
 
-
-# =====================================================
-# USER MODULE
-# =====================================================
+# User Module
 
 @app.route("/api/v1/users/register", methods=["POST"])
 def register_user():
@@ -207,10 +195,8 @@ def get_user(uid):
             return jsonify(u), 200
     return jsonify({"error": "User not found"}), 404
 
+# Search
 
-# =====================================================
-# SEARCH
-# =====================================================
 
 @app.route("/api/v1/restaurants/search", methods=["GET"])
 def search_restaurant():
@@ -229,10 +215,7 @@ def search_restaurant():
 
     return jsonify(result), 200
 
-
-# =====================================================
-# ORDER MODULE
-# =====================================================
+# order module
 
 @app.route("/api/v1/orders", methods=["POST"])
 def place_order():
@@ -253,7 +236,6 @@ def place_order():
     for item in items:
         name = item.get("name")
 
-        # ✅ convert qty to int (VERY IMPORTANT)
         try:
             qty = int(item.get("qty", 1))
         except:
@@ -270,7 +252,7 @@ def place_order():
         if not dish:
             return jsonify({"error": f"{name} not available"}), 400
 
-        # ✅ convert price to int
+
         try:
             price = int(dish.get("price", 0))
         except:
@@ -339,11 +321,7 @@ def orders_by_user(uid):
             })
 
     return jsonify(result), 200
-
-
-# =====================================================
-# RATINGS
-# =====================================================
+# Rating
 
 @app.route("/api/v1/ratings", methods=["POST"])
 def give_rating():
@@ -356,10 +334,7 @@ def give_rating():
 
     return jsonify(data), 201
 
-
-# =====================================================
-# ADMIN
-# =====================================================
+# Admin
 
 @app.route("/api/v1/admin/restaurants/<int:rid>/approve", methods=["PUT"])
 def approve_restaurant(rid):
@@ -395,11 +370,6 @@ def admin_feedback():
 @app.route("/api/v1/admin/orders", methods=["GET"])
 def admin_orders():
     return jsonify(read_file("orders.json")), 200
-
-
-# =====================================================
-# RUN
-# =====================================================
 
 if __name__ == "__main__":
     app.run(debug=True)

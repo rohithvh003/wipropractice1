@@ -3,9 +3,6 @@ import requests
 BASE = "http://127.0.0.1:5000"
 
 
-# =====================================================
-# RESTAURANT
-# =====================================================
 
 def test_01_register_restaurant():
     data = {
@@ -32,10 +29,6 @@ def test_04_disable_restaurant():
     r = requests.put(f"{BASE}/api/v1/restaurants/1/disable")
     assert r.status_code in [200, 404]
 
-
-# =====================================================
-# DISH
-# =====================================================
 
 def test_05_add_dish():
     data = {"name": "Burger", "type": "veg", "price": 120}
@@ -67,19 +60,11 @@ def test_09_register_user():
     r = requests.post(f"{BASE}/api/v1/users/register", json=data)
     assert r.status_code in [201, 409]
 
-
-# =====================================================
-# SEARCH
-# =====================================================
-
 def test_10_search():
     r = requests.get(f"{BASE}/api/v1/restaurants/search?name=Pytest")
     assert r.status_code == 200
 
 
-# =====================================================
-# ORDER
-# =====================================================
 
 def test_place_order():
 
@@ -124,19 +109,13 @@ def test_13_orders_by_user():
     assert r.status_code == 200
 
 
-# =====================================================
-# RATING
-# =====================================================
-
 def test_14_rating():
     data = {"order_id": 1, "rating": 5, "comment": "Good"}
     r = requests.post(f"{BASE}/api/v1/ratings", json=data)
     assert r.status_code == 201
 
 
-# =====================================================
-# ADMIN
-# =====================================================
+
 
 def test_15_admin_approve():
     r = requests.put(f"{BASE}/api/v1/admin/restaurants/1/approve")
