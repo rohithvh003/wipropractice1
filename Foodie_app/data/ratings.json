@@ -1,14 +1,8 @@
 [
     {
         "order_id": 1,
-        "rating": 5,
+        "rating": "5",
         "comment": "Good",
         "id": 1
-    },
-    {
-        "order_id": 2,
-        "rating": 5,
-        "comment": "average",
-        "id": 2
     }
 ]

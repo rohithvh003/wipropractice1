@@ -1,9 +1,9 @@
 [
     {
-        "name": "Dosa",
+        "id_dishes": 1,
+        "name": "Pizza",
         "type": "veg",
-        "price": 200,
-        "id": 1,
+        "price": "200",
         "restaurant_id": 1,
         "enabled": true
     }

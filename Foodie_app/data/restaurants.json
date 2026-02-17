@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "name": "Rameshvaram Cafe",
+        "name": "Hotel5847",
         "category": "Indian",
-        "location": "Chennai Updated",
-        "contact": "75841298",
+        "location": "City",
+        "contact": "999",
         "active": true,
-        "approved": true
+        "approved": false
     }
 ]

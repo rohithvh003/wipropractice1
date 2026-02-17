@@ -1,0 +1,15 @@
+{
+  "login": {
+    "email": "testuser1@test.com",
+    "password": "Password123"
+  },
+  "product": {
+    "name": "laptop"
+  },
+  "register": {
+    "first_name": "Akash",
+    "last_name": "Tester",
+    "email": "akash_auto_01@test.com",
+    "password": "Password123"
+  }
+}

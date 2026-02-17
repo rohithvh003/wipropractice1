@@ -81,10 +81,37 @@ def test_10_search():
 # ORDER
 # =====================================================
 
-def test_11_place_order():
-    data = {"user_id": 1, "restaurant_id": 1}
-    r = requests.post(f"{BASE}/api/v1/orders", json=data)
-    assert r.status_code == 201
+def test_place_order():
+
+    # create restaurant
+    r = requests.post(f"{BASE}/api/v1/restaurants", json={
+        "name": "TestHotel",
+        "category": "Indian"
+    })
+    rid = r.json()["id"]
+
+    # approve
+    requests.put(f"{BASE}/api/v1/admin/restaurants/{rid}/approve")
+
+    # add dish
+    requests.post(f"{BASE}/api/v1/restaurants/{rid}/dishes",
+                  json={"name": "Pizza", "price": 200})
+
+    # create user
+    u = requests.post(f"{BASE}/api/v1/users/register",
+                      json={"name": "User", "email": "u@mail.com", "password": "123"})
+    uid = u.json()["id"]
+
+    # place order
+    order = requests.post(f"{BASE}/api/v1/orders", json={
+        "user_id": uid,
+        "restaurant_id": rid,
+        "items": [{"name": "Pizza", "qty": 2}]
+    })
+
+    assert order.status_code == 201
+
+
 
 
 def test_12_orders_by_restaurant():

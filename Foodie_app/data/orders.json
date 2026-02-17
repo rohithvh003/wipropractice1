@@ -1,12 +1,15 @@
 [
     {
+        "id": 1,
         "user_id": 1,
         "restaurant_id": 1,
-        "id": 1
-    },
-    {
-        "user_id": 1,
-        "restaurant_id": 1,
-        "id_orders": 2
+        "items": [
+            {
+                "name": "Pizza",
+                "qty": 2,
+                "price": 200
+            }
+        ],
+        "total": 400
     }
 ]
