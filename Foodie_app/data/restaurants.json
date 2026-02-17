@@ -3,9 +3,18 @@
         "id": 1,
         "name": "Hotel5847",
         "category": "Indian",
-        "location": "City",
+        "location": "Hyderbad Updated",
         "contact": "999",
         "active": true,
-        "approved": false
+        "approved": true
+    },
+    {
+        "id": 2,
+        "name": "Chilli Hub",
+        "category": "Indian",
+        "location": "Hyderbad Updated",
+        "contact": "999999",
+        "active": true,
+        "approved": true
     }
 ]

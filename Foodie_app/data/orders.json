@@ -11,5 +11,18 @@
             }
         ],
         "total": 400
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "restaurant_id": 1,
+        "items": [
+            {
+                "name": "IDLI Sambar",
+                "qty": 2,
+                "price": 500
+            }
+        ],
+        "total": 1000
     }
 ]
