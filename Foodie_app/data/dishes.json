@@ -1,18 +1,34 @@
 [
     {
-        "id_dishes": 1,
-        "name": "Pizza",
-        "type": "veg",
-        "price": "200",
-        "restaurant_id": 1,
-        "enabled": true
-    },
-    {
         "id_dishes": 2,
         "name": "IDLI Sambar",
         "type": "veg",
         "price": 500,
         "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 3,
+        "name": "Burger",
+        "type": "veg",
+        "price": 120,
+        "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 4,
+        "name": "Pizza",
+        "type": "veg",
+        "price": 200,
+        "restaurant_id": 4,
+        "enabled": true
+    },
+    {
+        "id_dishes": 5,
+        "name": "Pizza",
+        "type": "veg",
+        "price": "200",
+        "restaurant_id": 5,
         "enabled": true
     }
 ]

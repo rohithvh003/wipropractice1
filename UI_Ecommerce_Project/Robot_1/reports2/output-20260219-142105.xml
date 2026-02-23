@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T14:21:05.474797" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests">
+<suite id="s1-s1" name="End2End Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:21:06.075304" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T14:21:06.074569" elapsed="6.291859"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T14:21:12.367036" elapsed="0.058302"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:21:12.425978" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T14:21:12.425672" elapsed="0.000397"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:21:06.072762" elapsed="6.353474"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user ${firstname}" line="15">
+<status status="FAIL" start="2026-02-19T14:21:12.427662" elapsed="0.002153">Test cannot be empty.</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T14:21:12.431972" elapsed="2.350562"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:21:12.431586" elapsed="2.351328"/>
+</kw>
+<status status="FAIL" start="2026-02-19T14:21:05.561176" elapsed="9.221867"/>
+</suite>
+<status status="FAIL" start="2026-02-19T14:21:05.479950" elapsed="9.305121"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="End2End Flow" id="s1-s1" pass="0" fail="1" skip="0">Tests.End2End Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T14:21:06.034625" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot", line 0</msg>
+<msg time="2026-02-19T14:21:06.035013" level="ERROR">In source file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\..\variables\users.csv", line 6</msg>
+<msg time="2026-02-19T14:21:06.071215" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: IndexError: list index out of range</msg>
+</errors>
+</robot>

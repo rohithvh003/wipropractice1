@@ -1,0 +1,2 @@
+﻿${first_name},${last_name},${email},${password}
+Test,User1,user_auto201@test.com,Password123

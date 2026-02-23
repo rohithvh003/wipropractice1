@@ -1,0 +1,6 @@
+${firstname},${lastname},${email_prefix},${password},${confirm_password}
+Pavani,Kalla,user1,Test@123,Test@123
+Anu,Reddy,user2,Test@456,Test@456
+Ravi,Kumar,user3,Test@789,Test@789
+Sneha,Sharma,user4,Hello@123,Hello@123
+Rahul,Verma,user5,Hello@456,Hello@456

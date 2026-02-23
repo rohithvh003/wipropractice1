@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T14:05:24.642185" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests">
+<suite id="s1-s1" name="End2End Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:25.362471" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T14:05:25.362061" elapsed="7.591389"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T14:05:32.955693" elapsed="0.088972"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:33.045303" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T14:05:33.045018" elapsed="0.000372"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:05:25.360911" elapsed="7.684647"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user Pavani" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:33.050442" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:05:33.049955" elapsed="0.825172"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:05:33.875601" elapsed="0.037232"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:33.913411" level="INFO">Selecting 'M' from radio button 'gender'.</msg>
+<msg time="2026-02-19T14:05:34.085895" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T14:05:34.086390" level="FAIL">No radio button with name 'gender' and value 'M' found.</msg>
+<arg>${GENDER_RADIO}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2026-02-19T14:05:33.913115" elapsed="0.186849">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.100269" elapsed="0.000054"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.100474" elapsed="0.000036"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.100661" elapsed="0.000038"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.100840" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101023" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101189" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101351" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101516" elapsed="0.000036"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101678" elapsed="0.000034"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="NOT RUN" start="2026-02-19T14:05:34.101796" elapsed="0.000056"/>
+</return>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:05:33.049316" elapsed="1.052734">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:34.102298" elapsed="0.000054"/>
+</kw>
+<kw name="Login To Application">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:34.102504" elapsed="0.000037"/>
+</kw>
+<kw name="Search Product">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:34.102686" elapsed="0.000034"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:34.102936" elapsed="0.000045"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:34.103184" elapsed="0.000041"/>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:34.103767" elapsed="0.000109"/>
+</kw>
+<arg>firstname=Pavani</arg>
+<arg>lastname=Kumar</arg>
+<arg>password=Test@123</arg>
+<arg>product=laptop</arg>
+<arg>gender=M</arg>
+<status status="FAIL" start="2026-02-19T14:05:33.048310" elapsed="1.055889">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:33.045693" elapsed="1.059438">No radio button with name 'gender' and value 'M' found.</status>
+</test>
+<test id="s1-s1-t2" name="E2E Flow for user Anu" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:34.110680" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:05:34.110406" elapsed="0.749804"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:05:34.860463" elapsed="0.025816"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:34.886950" level="INFO">Selecting 'F' from radio button 'gender'.</msg>
+<msg time="2026-02-19T14:05:35.059201" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T14:05:35.059494" level="FAIL">No radio button with name 'gender' and value 'F' found.</msg>
+<arg>${GENDER_RADIO}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2026-02-19T14:05:34.886547" elapsed="0.174999">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.061821" elapsed="0.000050"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062009" elapsed="0.000037"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062190" elapsed="0.000057"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062390" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062554" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062715" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.062874" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.063035" elapsed="0.000034"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.063194" elapsed="0.000036"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="NOT RUN" start="2026-02-19T14:05:35.063304" elapsed="0.000049"/>
+</return>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:05:34.109851" elapsed="0.953654">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:35.063698" elapsed="0.000039"/>
+</kw>
+<kw name="Login To Application">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:35.063862" elapsed="0.000034"/>
+</kw>
+<kw name="Search Product">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:35.064024" elapsed="0.000047"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:35.064295" elapsed="0.000044"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:35.064505" elapsed="0.000042"/>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:35.064676" elapsed="0.000034"/>
+</kw>
+<arg>firstname=Anu</arg>
+<arg>lastname=Sharma</arg>
+<arg>password=Test@456</arg>
+<arg>product=phone</arg>
+<arg>gender=F</arg>
+<status status="FAIL" start="2026-02-19T14:05:34.109226" elapsed="0.955592">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:34.107199" elapsed="0.958439">No radio button with name 'gender' and value 'F' found.</status>
+</test>
+<test id="s1-s1-t3" name="E2E Flow for user Ravi" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:35.070187" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:05:35.069888" elapsed="0.696927"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:05:35.767092" elapsed="0.024688"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:35.792370" level="INFO">Selecting 'M' from radio button 'gender'.</msg>
+<msg time="2026-02-19T14:05:35.959404" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T14:05:35.959665" level="FAIL">No radio button with name 'gender' and value 'M' found.</msg>
+<arg>${GENDER_RADIO}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2026-02-19T14:05:35.792045" elapsed="0.169442">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.961753" elapsed="0.000050"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.961945" elapsed="0.000057"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962150" elapsed="0.000037"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962324" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962485" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962646" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962806" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.962980" elapsed="0.000034"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:35.963140" elapsed="0.000076"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="NOT RUN" start="2026-02-19T14:05:35.963295" elapsed="0.000039"/>
+</return>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:05:35.069381" elapsed="0.894105">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:35.963686" elapsed="0.000038"/>
+</kw>
+<kw name="Login To Application">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:35.963850" elapsed="0.000035"/>
+</kw>
+<kw name="Search Product">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:35.964030" elapsed="0.000036"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:35.964266" elapsed="0.000043"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:35.964478" elapsed="0.000044"/>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:35.964648" elapsed="0.000038"/>
+</kw>
+<arg>firstname=Ravi</arg>
+<arg>lastname=Kumar</arg>
+<arg>password=Test@789</arg>
+<arg>product=mouse</arg>
+<arg>gender=M</arg>
+<status status="FAIL" start="2026-02-19T14:05:35.068790" elapsed="0.896005">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:35.067044" elapsed="0.898271">No radio button with name 'gender' and value 'M' found.</status>
+</test>
+<test id="s1-s1-t4" name="E2E Flow for user Sneha" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:35.985394" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:05:35.985123" elapsed="0.699888"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:05:36.685264" elapsed="0.026852"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:36.712651" level="INFO">Selecting 'F' from radio button 'gender'.</msg>
+<msg time="2026-02-19T14:05:36.909857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T14:05:36.910110" level="FAIL">No radio button with name 'gender' and value 'F' found.</msg>
+<arg>${GENDER_RADIO}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2026-02-19T14:05:36.712368" elapsed="0.199592">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.912234" elapsed="0.000051"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.912421" elapsed="0.000037"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.912599" elapsed="0.000036"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.912767" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.912931" elapsed="0.000054"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.913115" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.913275" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.913436" elapsed="0.000034"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:36.913594" elapsed="0.000036"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="NOT RUN" start="2026-02-19T14:05:36.913700" elapsed="0.000038"/>
+</return>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:05:35.984453" elapsed="0.929430">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:36.914078" elapsed="0.000038"/>
+</kw>
+<kw name="Login To Application">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:36.914240" elapsed="0.000034"/>
+</kw>
+<kw name="Search Product">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:36.914401" elapsed="0.000033"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:36.914629" elapsed="0.000042"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:36.914833" elapsed="0.000038"/>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:36.915011" elapsed="0.000035"/>
+</kw>
+<arg>firstname=Sneha</arg>
+<arg>lastname=Reddy</arg>
+<arg>password=Hello@123</arg>
+<arg>product=keyboard</arg>
+<arg>gender=F</arg>
+<status status="FAIL" start="2026-02-19T14:05:35.969294" elapsed="0.945862">No radio button with name 'gender' and value 'F' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:35.966777" elapsed="0.948904">No radio button with name 'gender' and value 'F' found.</status>
+</test>
+<test id="s1-s1-t5" name="E2E Flow for user Rahul" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:36.920671" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:05:36.920328" elapsed="1.124158"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:05:38.044736" elapsed="0.024828"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:05:38.070266" level="INFO">Selecting 'M' from radio button 'gender'.</msg>
+<msg time="2026-02-19T14:05:38.229872" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T14:05:38.230180" level="FAIL">No radio button with name 'gender' and value 'M' found.</msg>
+<arg>${GENDER_RADIO}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2026-02-19T14:05:38.069899" elapsed="0.161998">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.232162" elapsed="0.000048"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.232345" elapsed="0.000036"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.232525" elapsed="0.000039"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.232712" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.232876" elapsed="0.000046"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.233135" elapsed="0.000042"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.233307" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.233492" elapsed="0.000035"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T14:05:38.233696" elapsed="0.000071"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="NOT RUN" start="2026-02-19T14:05:38.233906" elapsed="0.000075"/>
+</return>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:05:36.919769" elapsed="1.314425">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:38.234439" elapsed="0.000042"/>
+</kw>
+<kw name="Login To Application">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:38.234613" elapsed="0.000035"/>
+</kw>
+<kw name="Search Product">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:05:38.234780" elapsed="0.000034"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:38.235013" elapsed="0.000043"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:05:38.235222" elapsed="0.000039"/>
+</kw>
+<kw name="Logout From Application">
+<status status="NOT RUN" start="2026-02-19T14:05:38.235383" elapsed="0.000033"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>password=Hello@456</arg>
+<arg>product=monitor</arg>
+<arg>gender=M</arg>
+<status status="FAIL" start="2026-02-19T14:05:36.919161" elapsed="1.316390">No radio button with name 'gender' and value 'M' found.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:36.916952" elapsed="1.319130">No radio button with name 'gender' and value 'M' found.</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T14:05:38.238955" elapsed="2.394995"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:05:38.238363" elapsed="2.396427"/>
+</kw>
+<status status="FAIL" start="2026-02-19T14:05:24.729284" elapsed="15.905708"/>
+</suite>
+<status status="FAIL" start="2026-02-19T14:05:24.646002" elapsed="15.995453"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="5" skip="0">Tests</stat>
+<stat name="End2End Flow" id="s1-s1" pass="0" fail="5" skip="0">Tests.End2End Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T14:05:25.305764" level="WARN">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\resources\register_keyword.robot' on line 28: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-02-19T14:05:25.330212" level="ERROR">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot' on line 7: Resource file '..\resources\login_keywords.robot' does not exist.</msg>
+<msg time="2026-02-19T14:05:25.331285" level="ERROR">Error in file 'C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot' on line 8: Resource file '..\resources\search_keywords.robot' does not exist.</msg>
+</errors>
+</robot>

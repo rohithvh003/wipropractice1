@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T12:53:01.672795" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests">
+<suite id="s1-s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:53:02.030102" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:53:02.029181" elapsed="5.552967"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T12:53:07.583013" elapsed="0.036801"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:53:07.620314" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T12:53:07.620085" elapsed="0.000284"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:53:02.027863" elapsed="5.592591"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user ${firstname}" line="10">
+<status status="FAIL" start="2026-02-19T12:53:07.621376" elapsed="0.001045">Test cannot be empty.</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:53:07.623944" elapsed="2.266182"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:53:07.623720" elapsed="2.266582"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:53:01.716584" elapsed="8.173770"/>
+</suite>
+<status status="FAIL" start="2026-02-19T12:53:01.674618" elapsed="8.216960"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="E2E Flow" id="s1-s1" pass="0" fail="1" skip="0">Tests.E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T12:53:02.024282" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot", line 0</msg>
+<msg time="2026-02-19T12:53:02.024492" level="ERROR">In source file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\..\variables\users.csv", line 0</msg>
+<msg time="2026-02-19T12:53:02.027106" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${firstname}.</msg>
+</errors>
+</robot>

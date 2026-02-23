@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T12:56:04.087523" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests">
+<suite id="s1-s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:04.414011" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:56:04.413596" elapsed="4.526012"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T12:56:08.939992" elapsed="0.045577"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:08.985979" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T12:56:08.985790" elapsed="0.000240"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:56:04.412201" elapsed="4.573906"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user Pavani" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:56:08.988396" level="INFO">Pavani</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:56:08.988032" elapsed="0.000431"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:08.988922" elapsed="0.045878"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:09.035796" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.035293" elapsed="0.645643"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:56:08.988638" elapsed="0.692435"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.681213" elapsed="0.016659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:09.698270" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.698057" elapsed="0.084446"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.783420" elapsed="0.023214"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:09.807119" level="INFO">Typing text 'Pavani' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.806840" elapsed="0.132844"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:56:09.782847" elapsed="0.156963"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.940727" elapsed="0.021665"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:09.962808" level="INFO">Typing text 'Kalla' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:09.962574" elapsed="0.108690"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:56:09.940055" elapsed="0.131442"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:56:10.072543" level="INFO">${random} = 2895</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.071849" elapsed="0.000754"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:56:10.073509" level="INFO">${generated_email} = user12895@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.072825" elapsed="0.000733"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.078513" elapsed="0.049161"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:10.128672" level="INFO">Typing text 'user12895@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.128069" elapsed="0.249138"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:56:10.073933" elapsed="0.305858"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.384621" elapsed="0.055270"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:10.440427" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:10.440121" elapsed="0.095516"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:56:10.380964" elapsed="0.154804"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:20.739050" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:56:20.739358" level="FAIL">Element 'Test@123' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:56:10.536362" elapsed="10.207515">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744107" elapsed="0.000038"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:56:10.535986" elapsed="10.208279">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744449" elapsed="0.000030"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744559" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744677" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744788" elapsed="0.000029"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.744907" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745022" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745134" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745264" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745377" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745491" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745586" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745701" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745799" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.745913" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746015" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746113" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746227" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746351" elapsed="0.000060"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746496" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746646" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746771" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746865" elapsed="0.000021"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.746967" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.747077" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.747276" elapsed="0.000088"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:20.747569" elapsed="0.000030"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:20.747693" elapsed="0.000026"/>
+</kw>
+<arg>firstname=Pavani</arg>
+<arg>lastname=Kalla</arg>
+<arg>email=user1</arg>
+<arg>password=Test@123</arg>
+<arg>confirm_password=Test@123</arg>
+<arg>search_item=14.1-inch Laptop</arg>
+<status status="FAIL" start="2026-02-19T12:56:08.987646" elapsed="11.760190">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:08.986189" elapsed="11.762278">Element 'Test@123' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t2" name="E2E Flow for user Anu" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:56:20.750949" level="INFO">Anu</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:56:20.750696" elapsed="0.000301"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:20.751346" elapsed="0.018798"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:20.770552" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:20.770339" elapsed="0.593577"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:56:20.751116" elapsed="0.612945"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.364222" elapsed="0.018958"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:21.383989" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.383599" elapsed="0.086961"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.471337" elapsed="0.017480"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:21.489324" level="INFO">Typing text 'Anu' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.489070" elapsed="0.081034"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:56:21.470852" elapsed="0.099412"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.571141" elapsed="0.014531"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:21.586117" level="INFO">Typing text 'Reddy' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.585875" elapsed="0.082986"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:56:21.570488" elapsed="0.098677"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:56:21.669762" level="INFO">${random} = 3509</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.669366" elapsed="0.000431"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:56:21.670356" level="INFO">${generated_email} = user23509@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.669922" elapsed="0.000467"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.670946" elapsed="0.019277"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:21.690837" level="INFO">Typing text 'user23509@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.690531" elapsed="0.111702"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:56:21.670587" elapsed="0.131772"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.802921" elapsed="0.014384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:21.817738" level="INFO">Typing text 'Test@456' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:56:21.817495" elapsed="0.088970"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:56:21.802548" elapsed="0.104055"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:24.230197" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.230900" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:56:21.907174" elapsed="2.336168">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.243657" elapsed="0.000072"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:56:21.906789" elapsed="2.337145">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.244213" elapsed="0.000039"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.244373" elapsed="0.000026"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.244896" elapsed="0.000130"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.245295" elapsed="0.000049"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.245519" elapsed="0.000042"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.245711" elapsed="0.000041"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.245903" elapsed="0.000038"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.246116" elapsed="0.000046"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.246471" elapsed="0.000051"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.246673" elapsed="0.000046"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.246873" elapsed="0.000039"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247088" elapsed="0.000043"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247278" elapsed="0.000043"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247490" elapsed="0.000038"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247665" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247796" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.247946" elapsed="0.000029"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248062" elapsed="0.000026"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248185" elapsed="0.000064"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248417" elapsed="0.000046"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248616" elapsed="0.000054"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248825" elapsed="0.000037"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.248988" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.249197" elapsed="0.000037"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.249328" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.249465" elapsed="0.000027"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.249581" elapsed="0.000040"/>
+</kw>
+<arg>firstname=Anu</arg>
+<arg>lastname=Reddy</arg>
+<arg>email=user2</arg>
+<arg>password=Test@456</arg>
+<arg>confirm_password=Test@456</arg>
+<arg>search_item=Blue Jeans</arg>
+<status status="FAIL" start="2026-02-19T12:56:20.750375" elapsed="3.499435">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:20.749214" elapsed="3.501359">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t3" name="E2E Flow for user Ravi" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:56:24.256307" level="INFO">Ravi</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:56:24.255848" elapsed="0.000540"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:24.265614" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.266994" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:56:24.257161" elapsed="0.014272">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.271858" elapsed="0.000107"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.256647" elapsed="0.015624">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.272464" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.272601" elapsed="0.000027"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.272994" elapsed="0.000191"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.273807" elapsed="0.000203"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.275106" elapsed="0.000212"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.276787" elapsed="0.000175"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.277423" elapsed="0.000092"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.277759" elapsed="0.000054"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278007" elapsed="0.000044"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278192" elapsed="0.000031"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278355" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278494" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278616" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278740" elapsed="0.000029"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.278866" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279028" elapsed="0.000029"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279166" elapsed="0.000028"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279301" elapsed="0.000026"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279430" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279549" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279674" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279793" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.279925" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280038" elapsed="0.000025"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280202" elapsed="0.000032"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280360" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280478" elapsed="0.000026"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280595" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280737" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280875" elapsed="0.000026"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.280988" elapsed="0.000025"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.281132" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.281267" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.281380" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.281510" elapsed="0.000026"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.281658" elapsed="0.000033"/>
+</kw>
+<arg>firstname=Ravi</arg>
+<arg>lastname=Kumar</arg>
+<arg>email=user3</arg>
+<arg>password=Test@789</arg>
+<arg>confirm_password=Test@789</arg>
+<arg>search_item=Music 2</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.255190" elapsed="0.026761">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:24.252366" elapsed="0.031040">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t4" name="E2E Flow for user Sneha" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:56:24.287322" level="INFO">Sneha</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:56:24.286896" elapsed="0.000508"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:24.295637" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.297075" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:56:24.288365" elapsed="0.012750">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.301647" elapsed="0.000092"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.287713" elapsed="0.014221">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.302146" elapsed="0.000042"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.302316" elapsed="0.000029"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.302628" elapsed="0.000048"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.302801" elapsed="0.000026"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.302942" elapsed="0.000025"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303061" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303191" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303312" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303434" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303573" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303694" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303828" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.303948" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304072" elapsed="0.000027"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304198" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304320" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304429" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304613" elapsed="0.000030"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304745" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304861" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.304985" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.305090" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.305215" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.305714" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.305845" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.305975" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.306079" elapsed="0.000023"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.306189" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.306309" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.306440" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.306552" elapsed="0.000024"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.307144" elapsed="0.000070"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.307436" elapsed="0.000045"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.307617" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.307804" elapsed="0.000034"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.307956" elapsed="0.000027"/>
+</kw>
+<arg>firstname=Sneha</arg>
+<arg>lastname=Sharma</arg>
+<arg>email=user4</arg>
+<arg>password=Hello@123</arg>
+<arg>confirm_password=Hello@123</arg>
+<arg>search_item=Fiction</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.286172" elapsed="0.021982">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:24.284393" elapsed="0.024492">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t5" name="E2E Flow for user Rahul" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:56:24.312592" level="INFO">Rahul</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:56:24.312122" elapsed="0.000550"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:56:24.320732" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.321495" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:56:24.313464" elapsed="0.011242">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.325076" elapsed="0.000087"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.312984" elapsed="0.012323">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.325431" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.325548" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.325766" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.325901" elapsed="0.000031"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326061" elapsed="0.000026"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326177" elapsed="0.000030"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326315" elapsed="0.000026"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326442" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326565" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326688" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326795" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.326910" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327019" elapsed="0.000027"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327133" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327247" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327360" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327458" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327576" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327688" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327782" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327902" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.327997" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328119" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328218" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328322" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328435" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328532" elapsed="0.000023"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328632" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328741" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328862" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.328960" elapsed="0.000022"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.329066" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.329176" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.329276" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:56:24.329393" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:56:24.329527" elapsed="0.000021"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>email=user5</arg>
+<arg>password=Hello@456</arg>
+<arg>confirm_password=Hello@456</arg>
+<arg>search_item=Black &amp; White Diamond Heart</arg>
+<status status="FAIL" start="2026-02-19T12:56:24.311583" elapsed="0.018095">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:24.309911" elapsed="0.020794">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:56:24.332784" elapsed="2.295578"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:56:24.331989" elapsed="2.296575"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:56:04.130163" elapsed="22.498480"/>
+</suite>
+<status status="FAIL" start="2026-02-19T12:56:04.089276" elapsed="22.540813"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="5" skip="0">Tests</stat>
+<stat name="E2E Flow" id="s1-s1" pass="0" fail="5" skip="0">Tests.E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T12:56:24.230197" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.265614" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.295637" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:56:24.320732" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+</errors>
+</robot>

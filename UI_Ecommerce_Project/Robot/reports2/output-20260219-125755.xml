@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T12:57:55.089110" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests">
+<suite id="s1-s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:57:55.424448" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:57:55.424174" elapsed="5.364516"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T12:58:00.789524" elapsed="0.054181"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:00.844318" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T12:58:00.844047" elapsed="0.000338"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:57:55.423403" elapsed="5.421088"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user Pavani" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:58:00.847786" level="INFO">Pavani</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:58:00.847295" elapsed="0.000559"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:00.848355" elapsed="0.040732"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:00.889905" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:00.889451" elapsed="0.681696"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:58:00.848073" elapsed="0.723226"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.571493" elapsed="0.016829"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:01.588695" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.588511" elapsed="0.084206"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.673568" elapsed="0.020638"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:01.694944" level="INFO">Typing text 'Pavani' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.694537" elapsed="0.116845"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:58:01.673133" elapsed="0.138455"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.812538" elapsed="0.026185"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:01.839245" level="INFO">Typing text 'Kalla' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.838967" elapsed="0.105584"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:58:01.811901" elapsed="0.132956"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:58:01.945624" level="INFO">${random} = 4883</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.945101" elapsed="0.000565"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:58:01.946296" level="INFO">${generated_email} = user14883@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.945851" elapsed="0.000513"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.946959" elapsed="0.024902"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:01.972611" level="INFO">Typing text 'user14883@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:01.972108" elapsed="0.115706"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:58:01.946578" elapsed="0.141372"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:02.088689" elapsed="0.018521"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:02.107711" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:02.107456" elapsed="0.097500"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:58:02.088252" elapsed="0.116836"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:12.442118" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:58:12.442403" level="FAIL">Element 'Test@123' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:58:02.205700" elapsed="10.239111">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445042" elapsed="0.000035"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:58:02.205300" elapsed="10.239894">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445409" elapsed="0.000070"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445612" elapsed="0.000030"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445757" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445870" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.445982" elapsed="0.000031"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446103" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446213" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446317" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446426" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446539" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446635" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446745" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446846" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.446957" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447055" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447151" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447261" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447355" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447450" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447577" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447694" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447788" elapsed="0.000021"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447889" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.447997" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.448089" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:12.448207" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:12.448305" elapsed="0.000022"/>
+</kw>
+<arg>firstname=Pavani</arg>
+<arg>lastname=Kalla</arg>
+<arg>email=user1</arg>
+<arg>password=Test@123</arg>
+<arg>confirm_password=Test@123</arg>
+<arg>search_item=14.1-inch Laptop</arg>
+<status status="FAIL" start="2026-02-19T12:58:00.846573" elapsed="11.601870">Element 'Test@123' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:58:00.844592" elapsed="11.604321">Element 'Test@123' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t2" name="E2E Flow for user Anu" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:58:12.451540" level="INFO">Anu</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:58:12.451241" elapsed="0.000352"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:12.451956" elapsed="0.017205"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:12.469748" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:12.469448" elapsed="0.605439"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:58:12.451740" elapsed="0.623594"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.075662" elapsed="0.010672"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:13.086815" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.086574" elapsed="0.063059"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.150507" elapsed="0.012640"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:13.163602" level="INFO">Typing text 'Anu' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.163358" elapsed="0.067301"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:58:13.150052" elapsed="0.080716"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.231280" elapsed="0.016813"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:13.248499" level="INFO">Typing text 'Reddy' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.248272" elapsed="0.077346"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:58:13.230937" elapsed="0.094830"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:58:13.326155" level="INFO">${random} = 7700</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.325913" elapsed="0.000268"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:58:13.326573" level="INFO">${generated_email} = user27700@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.326274" elapsed="0.000324"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.327005" elapsed="0.022935"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:13.350467" level="INFO">Typing text 'user27700@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.350180" elapsed="0.088431"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:58:13.326728" elapsed="0.112142"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.439939" elapsed="0.012205"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:13.452553" level="INFO">Typing text 'Test@456' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:13.452325" elapsed="0.073711"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:58:13.439528" elapsed="0.086637"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:23.723438" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:58:23.723619" level="FAIL">Element 'Test@456' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:58:13.526707" elapsed="10.197741">Element 'Test@456' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.724625" elapsed="0.000032"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:58:13.526343" elapsed="10.198409">Element 'Test@456' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.724917" elapsed="0.000029"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725032" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725152" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725263" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725374" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725485" elapsed="0.000037"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725610" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725706" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725821" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.725931" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726041" elapsed="0.000042"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726206" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726309" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726420" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726515" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726612" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726723" elapsed="0.000047"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726843" elapsed="0.000020"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.726937" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727046" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727161" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727256" elapsed="0.000021"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727354" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727464" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727571" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727688" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:23.727783" elapsed="0.000021"/>
+</kw>
+<arg>firstname=Anu</arg>
+<arg>lastname=Reddy</arg>
+<arg>email=user2</arg>
+<arg>password=Test@456</arg>
+<arg>confirm_password=Test@456</arg>
+<arg>search_item=Blue Jeans</arg>
+<status status="FAIL" start="2026-02-19T12:58:12.450869" elapsed="11.277031">Element 'Test@456' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:58:12.449607" elapsed="11.278717">Element 'Test@456' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t3" name="E2E Flow for user Ravi" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:58:23.730892" level="INFO">Ravi</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:58:23.730638" elapsed="0.000392"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:23.731892" elapsed="0.019969"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:23.752377" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:23.752038" elapsed="1.030508"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:58:23.731467" elapsed="1.051225"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.782866" elapsed="0.014574"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:24.798099" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.797764" elapsed="0.062756"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.861178" elapsed="0.013379"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:24.875034" level="INFO">Typing text 'Ravi' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.874760" elapsed="0.076218"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:58:24.860793" elapsed="0.090373"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.951949" elapsed="0.019766"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:24.972295" level="INFO">Typing text 'Kumar' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:24.971974" elapsed="0.085619"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:58:24.951441" elapsed="0.106269"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:58:25.058056" level="INFO">${random} = 0294</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.057855" elapsed="0.000227"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:58:25.058467" level="INFO">${generated_email} = user30294@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.058185" elapsed="0.000308"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.058881" elapsed="0.015409"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:25.074904" level="INFO">Typing text 'user30294@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.074583" elapsed="0.120542"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:58:25.058620" elapsed="0.136654"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.196087" elapsed="0.014508"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:25.211063" level="INFO">Typing text 'Test@789' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:25.210803" elapsed="0.066906"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:58:25.195552" elapsed="0.082299"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:35.466852" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:58:35.467032" level="FAIL">Element 'Test@789' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:58:25.278355" elapsed="10.189483">Element 'Test@789' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468017" elapsed="0.000034"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:58:25.278019" elapsed="10.190130">Element 'Test@789' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468305" elapsed="0.000027"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468410" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468529" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468640" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468769" elapsed="0.000025"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.468886" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469012" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469109" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469222" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469333" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469430" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469542" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469636" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469747" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469840" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.469939" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470048" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470141" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470269" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470380" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470500" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470601" elapsed="0.000021"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470696" elapsed="0.000032"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470820" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.470913" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:35.471024" elapsed="0.000025"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:35.471123" elapsed="0.000021"/>
+</kw>
+<arg>firstname=Ravi</arg>
+<arg>lastname=Kumar</arg>
+<arg>email=user3</arg>
+<arg>password=Test@789</arg>
+<arg>confirm_password=Test@789</arg>
+<arg>search_item=Music 2</arg>
+<status status="FAIL" start="2026-02-19T12:58:23.730312" elapsed="11.740919">Element 'Test@789' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:58:23.729181" elapsed="11.742853">Element 'Test@789' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t4" name="E2E Flow for user Sneha" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:58:35.475131" level="INFO">Sneha</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:58:35.474812" elapsed="0.000374"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:35.475571" elapsed="0.018688"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:35.494826" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:35.494557" elapsed="0.576556"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:58:35.475337" elapsed="0.595891"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.071363" elapsed="0.010160"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:36.081945" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.081761" elapsed="0.059101"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.141484" elapsed="0.014406"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:36.156420" level="INFO">Typing text 'Sneha' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.156129" elapsed="0.072953"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:58:36.141108" elapsed="0.088101"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.229755" elapsed="0.016627"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:36.246907" level="INFO">Typing text 'Sharma' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.246613" elapsed="0.077595"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:58:36.229398" elapsed="0.094941"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:58:36.324765" level="INFO">${random} = 7944</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.324508" elapsed="0.000290"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:58:36.325307" level="INFO">${generated_email} = user47944@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.324914" elapsed="0.000431"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.325929" elapsed="0.016490"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:36.342900" level="INFO">Typing text 'user47944@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.342630" elapsed="0.111278"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:58:36.325561" elapsed="0.128495"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.454777" elapsed="0.016413"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:36.471670" level="INFO">Typing text 'Hello@123' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:36.471399" elapsed="0.093465"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:58:36.454323" elapsed="0.110703"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:46.790783" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:58:46.790985" level="FAIL">Element 'Hello@123' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:58:36.565778" elapsed="10.226058">Element 'Hello@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792039" elapsed="0.000036"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:58:36.565287" elapsed="10.226892">Element 'Hello@123' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792333" elapsed="0.000028"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792515" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792637" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792758" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792869" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.792996" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793147" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793253" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793366" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793475" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793585" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793842" elapsed="0.000027"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.793960" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794073" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794168" elapsed="0.000020"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794264" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794378" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794471" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794566" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794675" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.794859" elapsed="0.000071"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795014" elapsed="0.000022"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795110" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795240" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795414" elapsed="0.000028"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795651" elapsed="0.000032"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:46.795785" elapsed="0.000023"/>
+</kw>
+<arg>firstname=Sneha</arg>
+<arg>lastname=Sharma</arg>
+<arg>email=user4</arg>
+<arg>password=Hello@123</arg>
+<arg>confirm_password=Hello@123</arg>
+<arg>search_item=Fiction</arg>
+<status status="FAIL" start="2026-02-19T12:58:35.474407" elapsed="11.321542">Element 'Hello@123' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:58:35.473053" elapsed="11.323860">Element 'Hello@123' not visible after 10 seconds.</status>
+</test>
+<test id="s1-s1-t5" name="E2E Flow for user Rahul" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:58:46.800097" level="INFO">Rahul</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:58:46.799711" elapsed="0.000445"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:46.800638" elapsed="0.017986"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:46.819859" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:46.818999" elapsed="0.605374"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:58:46.800349" elapsed="0.624150"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.424645" elapsed="0.010458"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:47.435676" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.435381" elapsed="0.077141"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.513198" elapsed="0.019535"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:47.533385" level="INFO">Typing text 'Rahul' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.533029" elapsed="0.091605"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:58:47.512793" elapsed="0.112586"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.626271" elapsed="0.017797"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:47.644561" level="INFO">Typing text 'Verma' into text field 'id:LastName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.644279" elapsed="0.086400"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="PASS" start="2026-02-19T12:58:47.625764" elapsed="0.105055"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T12:58:47.731241" level="INFO">${random} = 5719</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.730987" elapsed="0.000289"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T12:58:47.731790" level="INFO">${generated_email} = user55719@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.731395" elapsed="0.000429"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.732496" elapsed="0.017398"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:47.750438" level="INFO">Typing text 'user55719@mail.com' into text field 'id:Email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.750154" elapsed="0.108121"/>
+</kw>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="PASS" start="2026-02-19T12:58:47.732039" elapsed="0.126404"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.859084" elapsed="0.019005"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:47.878604" level="INFO">Typing text 'Hello@456' into text field 'id:Password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:58:47.878310" elapsed="0.099670"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-02-19T12:58:47.858670" elapsed="0.119459"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:58:58.228146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-19T12:58:58.228410" level="FAIL">Element 'Hello@456' not visible after 10 seconds.</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:58:47.978768" elapsed="10.250610">Element 'Hello@456' not visible after 10 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.229600" elapsed="0.000035"/>
+</kw>
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="FAIL" start="2026-02-19T12:58:47.978360" elapsed="10.251382">Element 'Hello@456' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.229907" elapsed="0.000031"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230021" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230138" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230269" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230377" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230486" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230595" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230689" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230815" elapsed="0.000026"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.230931" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231025" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231135" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231228" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231337" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231429" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231527" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231638" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231732" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231830" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.231946" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232058" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232150" elapsed="0.000021"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232267" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232377" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232469" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232586" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:58:58.232681" elapsed="0.000022"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>email=user5</arg>
+<arg>password=Hello@456</arg>
+<arg>confirm_password=Hello@456</arg>
+<arg>search_item=Black &amp; White Diamond Heart</arg>
+<status status="FAIL" start="2026-02-19T12:58:46.799016" elapsed="11.433915">Element 'Hello@456' not visible after 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:58:46.797772" elapsed="11.435573">Element 'Hello@456' not visible after 10 seconds.</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:58:58.235822" elapsed="2.247227"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:58:58.235542" elapsed="2.247723"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:57:55.133757" elapsed="65.349633"/>
+</suite>
+<status status="FAIL" start="2026-02-19T12:57:55.090875" elapsed="65.393949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="5" skip="0">Tests</stat>
+<stat name="E2E Flow" id="s1-s1" pass="0" fail="5" skip="0">Tests.E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

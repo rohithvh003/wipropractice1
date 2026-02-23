@@ -10,5 +10,23 @@
         "name": "Rohit",
         "email": "rohit@gmail.com",
         "password": 745
+    },
+    {
+        "id": 3,
+        "name": "Py User",
+        "email": "py@mail.com",
+        "password": "123"
+    },
+    {
+        "id": 4,
+        "name": "User",
+        "email": "u@mail.com",
+        "password": "123"
+    },
+    {
+        "id": 5,
+        "name": "User4911",
+        "email": "user4911@mail.com",
+        "password": "123"
     }
 ]

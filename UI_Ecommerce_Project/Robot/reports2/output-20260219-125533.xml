@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T12:55:33.994737" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests">
+<suite id="s1-s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:55:34.355054" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:55:34.354762" elapsed="4.864194"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:55:39.223184" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:55:39.225157" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-02-19T12:55:39.219641" elapsed="0.013631">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="NOT RUN" start="2026-02-19T12:55:39.233868" elapsed="0.000091"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:55:34.353851" elapsed="4.880427">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user ${firstname}" line="10">
+<status status="FAIL" start="2026-02-19T12:55:39.235757" elapsed="0.002121">Parent suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:55:39.240421" elapsed="2.236963"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:55:39.239853" elapsed="2.237792"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:55:34.049249" elapsed="7.428496">Suite setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</suite>
+<status status="FAIL" start="2026-02-19T12:55:34.002485" elapsed="7.476594"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="E2E Flow" id="s1-s1" pass="0" fail="1" skip="0">Tests.E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T12:55:34.349148" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot", line 0</msg>
+<msg time="2026-02-19T12:55:34.349395" level="ERROR">In source file:
+  File "C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\..\variables\users.csv", line 0</msg>
+<msg time="2026-02-19T12:55:34.352216" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${firstname}.</msg>
+<msg time="2026-02-19T12:55:39.223184" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7ca234435
+	0x7ff7ca234490
+	0x7ff7c9fcd49d
+	0x7ff7c9fa4012
+	0x7ff7ca058c66
+	0x7ff7ca075072
+	0x7ff7ca018e38
+	0x7ff7ca019d23
+	0x7ff7ca503b30
+	0x7ff7ca4fe3b8
+	0x7ff7ca51e72a
+	0x7ff7ca2507e5
+	0x7ff7ca25978c
+	0x7ff7ca23d794
+	0x7ff7ca23d946
+	0x7ff7ca223457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+</errors>
+</robot>

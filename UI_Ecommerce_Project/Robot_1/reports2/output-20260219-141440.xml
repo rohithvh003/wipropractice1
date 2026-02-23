@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T14:14:40.287346" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests">
+<suite id="s1-s1" name="End2End Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\PythonSelenium\Robot_1\tests\end2end_flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:40.841707" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T14:14:40.841323" elapsed="5.771791"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T14:14:46.614693" elapsed="0.064258"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:46.679453" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T14:14:46.679233" elapsed="0.000283"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:14:40.838969" elapsed="5.840639"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user Pavani" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:46.682801" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:46.682381" elapsed="0.840471"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.523138" elapsed="0.050561"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2026-02-19T14:14:47.574423" level="INFO">${gender_lower} = male</msg>
+<var>${gender_lower}</var>
+<arg>${gender}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.574027" elapsed="0.000446"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:47.575308" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-${gender_lower}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.574681" elapsed="0.114647"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:47.690155" level="INFO">Typing text 'Pavani' into text field 'id:FirstName'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.689610" elapsed="0.185025"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:47.876049" level="INFO">Typing text 'Kumar' into text field 'id:LastName'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.874985" elapsed="0.120997"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T14:14:47.996756" level="INFO">${random} = 8610</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.996262" elapsed="0.000537"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T14:14:47.997403" level="INFO">${email} = test8610@mail.com</msg>
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.996957" elapsed="0.000483"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:47.997826" level="INFO">Typing text 'test8610@mail.com' into text field 'id:Email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:47.997590" elapsed="0.144259"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:48.142486" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:48.142160" elapsed="0.128567"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:48.271193" level="FAIL">Variable '${CONFI' was not closed properly.</msg>
+<arg>${CONFI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-19T14:14:48.271012" elapsed="0.000237">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:14:46.681946" elapsed="1.589541">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:48.271764" elapsed="0.000081"/>
+</kw>
+<kw name="Login To Application" owner="login_keyword">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:48.272294" elapsed="0.000055"/>
+</kw>
+<kw name="Search Product" owner="search_keyword">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:48.272520" elapsed="0.000032"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:48.272690" elapsed="0.000178"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:48.273117" elapsed="0.000042"/>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:48.273307" elapsed="0.000032"/>
+</kw>
+<arg>firstname=Pavani</arg>
+<arg>lastname=Kumar</arg>
+<arg>password=Test@123</arg>
+<arg>product=laptop</arg>
+<arg>gender=male</arg>
+<status status="FAIL" start="2026-02-19T14:14:46.681472" elapsed="1.592002">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:46.679713" elapsed="1.594245">Variable '${CONFI' was not closed properly.</status>
+</test>
+<test id="s1-s1-t2" name="E2E Flow for user Anu" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:48.278129" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:48.277838" elapsed="0.711493"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:14:48.989613" elapsed="0.025619"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2026-02-19T14:14:49.015805" level="INFO">${gender_lower} = female</msg>
+<var>${gender_lower}</var>
+<arg>${gender}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.015500" elapsed="0.000349"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.016279" level="INFO">Clicking element 'id:gender-female'.</msg>
+<arg>id:gender-${gender_lower}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.016009" elapsed="0.109958"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.126632" level="INFO">Typing text 'Anu' into text field 'id:FirstName'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.126258" elapsed="0.131715"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.260589" level="INFO">Typing text 'Sharma' into text field 'id:LastName'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.258428" elapsed="0.158568"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T14:14:49.417952" level="INFO">${random} = 6400</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.417422" elapsed="0.000611"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T14:14:49.419330" level="INFO">${email} = test6400@mail.com</msg>
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.418388" elapsed="0.001031"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.420274" level="INFO">Typing text 'test6400@mail.com' into text field 'id:Email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.419779" elapsed="0.158132"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.578989" level="INFO">Typing text 'Test@456' into text field 'id:Password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.578252" elapsed="0.136259"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.714962" level="FAIL">Variable '${CONFI' was not closed properly.</msg>
+<arg>${CONFI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-19T14:14:49.714782" elapsed="0.000252">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:14:48.277157" elapsed="1.438038">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:49.715441" elapsed="0.000051"/>
+</kw>
+<kw name="Login To Application" owner="login_keyword">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:49.715703" elapsed="0.000041"/>
+</kw>
+<kw name="Search Product" owner="search_keyword">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:49.715913" elapsed="0.000039"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:49.716120" elapsed="0.000038"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:49.716324" elapsed="0.000038"/>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:49.716507" elapsed="0.000038"/>
+</kw>
+<arg>firstname=Anu</arg>
+<arg>lastname=Sharma</arg>
+<arg>password=Test@456</arg>
+<arg>product=phone</arg>
+<arg>gender=female</arg>
+<status status="FAIL" start="2026-02-19T14:14:48.276176" elapsed="1.440478">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:48.274734" elapsed="1.442675">Variable '${CONFI' was not closed properly.</status>
+</test>
+<test id="s1-s1-t3" name="E2E Flow for user Ravi" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:49.728357" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:49.728006" elapsed="0.732389"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.460706" elapsed="0.024930"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2026-02-19T14:14:50.486374" level="INFO">${gender_lower} = male</msg>
+<var>${gender_lower}</var>
+<arg>${gender}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.485982" elapsed="0.000444"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:50.487014" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-${gender_lower}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.486652" elapsed="0.138579"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:50.626490" level="INFO">Typing text 'Ravi' into text field 'id:FirstName'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.625717" elapsed="0.133048"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:50.760135" level="INFO">Typing text 'Kumar' into text field 'id:LastName'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.759467" elapsed="0.140521"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T14:14:50.900670" level="INFO">${random} = 0114</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.900317" elapsed="0.000402"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T14:14:50.901447" level="INFO">${email} = test0114@mail.com</msg>
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.900912" elapsed="0.000600"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:50.902033" level="INFO">Typing text 'test0114@mail.com' into text field 'id:Email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:50.901715" elapsed="0.167310"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:51.069657" level="INFO">Typing text 'Test@789' into text field 'id:Password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:51.069306" elapsed="0.129708"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:51.199678" level="FAIL">Variable '${CONFI' was not closed properly.</msg>
+<arg>${CONFI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-19T14:14:51.199432" elapsed="0.000374">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:14:49.727439" elapsed="1.472626">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:51.200465" elapsed="0.000057"/>
+</kw>
+<kw name="Login To Application" owner="login_keyword">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:51.200715" elapsed="0.000040"/>
+</kw>
+<kw name="Search Product" owner="search_keyword">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:51.200932" elapsed="0.000043"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:51.201150" elapsed="0.000039"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:51.201363" elapsed="0.000039"/>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:51.201550" elapsed="0.000038"/>
+</kw>
+<arg>firstname=Ravi</arg>
+<arg>lastname=Kumar</arg>
+<arg>password=Test@789</arg>
+<arg>product=mouse</arg>
+<arg>gender=male</arg>
+<status status="FAIL" start="2026-02-19T14:14:49.726833" elapsed="1.474901">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:49.718742" elapsed="1.483508">Variable '${CONFI' was not closed properly.</status>
+</test>
+<test id="s1-s1-t4" name="E2E Flow for user Sneha" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:51.209206" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:51.208912" elapsed="0.700739"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:14:51.910020" elapsed="0.024712"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2026-02-19T14:14:51.935301" level="INFO">${gender_lower} = female</msg>
+<var>${gender_lower}</var>
+<arg>${gender}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2026-02-19T14:14:51.934991" elapsed="0.000354"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:51.935742" level="INFO">Clicking element 'id:gender-female'.</msg>
+<arg>id:gender-${gender_lower}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:51.935505" elapsed="0.117179"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.053813" level="INFO">Typing text 'Sneha' into text field 'id:FirstName'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.053041" elapsed="0.143557"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.197567" level="INFO">Typing text 'Reddy' into text field 'id:LastName'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.196952" elapsed="0.135908"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T14:14:52.333574" level="INFO">${random} = 5628</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.333163" elapsed="0.000463"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T14:14:52.334445" level="INFO">${email} = test5628@mail.com</msg>
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.333877" elapsed="0.000621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.335016" level="INFO">Typing text 'test5628@mail.com' into text field 'id:Email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.334710" elapsed="0.170404"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.506011" level="INFO">Typing text 'Hello@123' into text field 'id:Password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.505563" elapsed="0.132011"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.638045" level="FAIL">Variable '${CONFI' was not closed properly.</msg>
+<arg>${CONFI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-19T14:14:52.637875" elapsed="0.000225">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:14:51.208271" elapsed="1.429990">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:52.638505" elapsed="0.000044"/>
+</kw>
+<kw name="Login To Application" owner="login_keyword">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:52.638757" elapsed="0.000041"/>
+</kw>
+<kw name="Search Product" owner="search_keyword">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:52.638966" elapsed="0.000038"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:52.639167" elapsed="0.000053"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:52.639385" elapsed="0.000038"/>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:52.639568" elapsed="0.000038"/>
+</kw>
+<arg>firstname=Sneha</arg>
+<arg>lastname=Reddy</arg>
+<arg>password=Hello@123</arg>
+<arg>product=keyboard</arg>
+<arg>gender=female</arg>
+<status status="FAIL" start="2026-02-19T14:14:51.207613" elapsed="1.432100">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:51.204625" elapsed="1.435859">Variable '${CONFI' was not closed properly.</status>
+</test>
+<test id="s1-s1-t5" name="E2E Flow for user Rahul" line="15">
+<kw name="Complete User Flow">
+<kw name="Register New User" owner="register_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:52.644397" level="INFO">Clicking element 'link:Register'.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:52.644132" elapsed="0.672228"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.316619" elapsed="0.026835"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2026-02-19T14:14:53.344078" level="INFO">${gender_lower} = male</msg>
+<var>${gender_lower}</var>
+<arg>${gender}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.343761" elapsed="0.000362"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:53.344561" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-${gender_lower}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.344295" elapsed="0.107905"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:53.452846" level="INFO">Typing text 'Rahul' into text field 'id:FirstName'.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.452474" elapsed="0.172479"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:53.626145" level="INFO">Typing text 'Verma' into text field 'id:LastName'.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.625552" elapsed="0.145085"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-19T14:14:53.771486" level="INFO">${random} = 0329</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.771087" elapsed="0.000456"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-19T14:14:53.772516" level="INFO">${email} = test0329@mail.com</msg>
+<var>${email}</var>
+<arg>test${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.771835" elapsed="0.000764"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:53.773599" level="INFO">Typing text 'test0329@mail.com' into text field 'id:Email'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.772947" elapsed="0.157742"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:53.931391" level="INFO">Typing text 'Hello@456' into text field 'id:Password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T14:14:53.931034" elapsed="0.165896"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T14:14:54.097410" level="FAIL">Variable '${CONFI' was not closed properly.</msg>
+<arg>${CONFI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-19T14:14:54.097236" elapsed="0.000229">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<var>${email}</var>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${password}</arg>
+<arg>${gender}</arg>
+<status status="FAIL" start="2026-02-19T14:14:52.643601" elapsed="1.454022">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:54.097862" elapsed="0.000044"/>
+</kw>
+<kw name="Login To Application" owner="login_keyword">
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:54.098115" elapsed="0.000042"/>
+</kw>
+<kw name="Search Product" owner="search_keyword">
+<arg>${product}</arg>
+<status status="NOT RUN" start="2026-02-19T14:14:54.098327" elapsed="0.000075"/>
+</kw>
+<kw name="Add Product To Cart" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:54.098575" elapsed="0.000039"/>
+</kw>
+<kw name="Go To Cart And Remove Item" owner="cart_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:54.098854" elapsed="0.000053"/>
+</kw>
+<kw name="Logout From Application" owner="login_keyword">
+<status status="NOT RUN" start="2026-02-19T14:14:54.099102" elapsed="0.000046"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>password=Hello@456</arg>
+<arg>product=monitor</arg>
+<arg>gender=male</arg>
+<status status="FAIL" start="2026-02-19T14:14:52.642981" elapsed="1.456336">Variable '${CONFI' was not closed properly.</status>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:52.641219" elapsed="1.459115">Variable '${CONFI' was not closed properly.</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T14:14:54.102857" elapsed="2.336372"/>
+</kw>
+<status status="PASS" start="2026-02-19T14:14:54.102329" elapsed="2.337120"/>
+</kw>
+<status status="FAIL" start="2026-02-19T14:14:40.359429" elapsed="16.080094"/>
+</suite>
+<status status="FAIL" start="2026-02-19T14:14:40.290314" elapsed="16.150824"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="5" skip="0">Tests</stat>
+<stat name="End2End Flow" id="s1-s1" pass="0" fail="5" skip="0">Tests.End2End Flow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

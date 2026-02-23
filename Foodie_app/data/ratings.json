@@ -10,5 +10,17 @@
         "rating": 5,
         "comment": "average",
         "id": 2
+    },
+    {
+        "order_id": 1,
+        "rating": 5,
+        "comment": "Good",
+        "id": 3
+    },
+    {
+        "order_id": 4,
+        "rating": "5",
+        "comment": "Good",
+        "id": 4
     }
 ]

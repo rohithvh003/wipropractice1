@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-19T12:05:33.655951" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests">
+<suite id="s1-s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:34.083276" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-19T12:05:34.083045" elapsed="5.552354"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-19T12:05:39.636420" elapsed="0.042970"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-02-19T12:05:39.679667" elapsed="0.000708"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:39.680797" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-19T12:05:39.680568" elapsed="0.000294"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:05:34.082361" elapsed="5.598604"/>
+</kw>
+<test id="s1-s1-t1" name="E2E Flow for user Rohith" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:05:39.685668" level="INFO">Rohith</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:05:39.684783" elapsed="0.001056"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:41.740071" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:05:39.686208" elapsed="2.054144"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:05:41.741256" elapsed="2.025979"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:43.768211" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:05:43.767668" elapsed="2.626799"/>
+</kw>
+<arg>${REGISTER_LINK}</arg>
+<status status="PASS" start="2026-02-19T12:05:41.740789" elapsed="4.654103"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:48.416339" level="INFO">Current page contains text 'Register'.</msg>
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-19T12:05:46.395167" elapsed="2.021464"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:48.417374" level="INFO">Clicking element 'id:gender-male'.</msg>
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:05:48.417038" elapsed="2.124104"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:52.567566" level="INFO">Element 'id:FirstName' is displayed.</msg>
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:05:50.541842" elapsed="2.025859"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:05:52.568266" elapsed="2.021433"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:54.590300" level="INFO">Typing text 'Rohith' into text field 'id:FirstName'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-19T12:05:54.589997" elapsed="3.141010"/>
+</kw>
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="PASS" start="2026-02-19T12:05:52.567929" elapsed="5.163332"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:05:59.758124" level="INFO">Element 'id:LastName' is displayed.</msg>
+<arg>${LASTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-19T12:05:57.731557" elapsed="2.026789"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:06:00.854731" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:00.855797" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.75); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d49d
+	0x7ff6a3f489b2
+	0x7ff6a3f6ed75
+	0x7ff6a3fe8ec0
+	0x7ff6a4005072
+	0x7ff6a3fa8e38
+	0x7ff6a3fa9d23
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a41cd794
+	0x7ff6a41cd946
+	0x7ff6a41b3457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:05:59.759229" elapsed="1.226850">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.75); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d49d
+	0x7ff6a3f489b2
+	0x7ff6a3f6ed75
+	0x7ff6a3fe8ec0
+	0x7ff6a4005072
+	0x7ff6a3fa8e38
+	0x7ff6a3fa9d23
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a41cd794
+	0x7ff6a41cd946
+	0x7ff6a41b3457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.986634" elapsed="0.000073"/>
+</kw>
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="FAIL" start="2026-02-19T12:05:59.758744" elapsed="1.228149">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.75); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d49d
+	0x7ff6a3f489b2
+	0x7ff6a3f6ed75
+	0x7ff6a3fe8ec0
+	0x7ff6a4005072
+	0x7ff6a3fa8e38
+	0x7ff6a3fa9d23
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a41cd794
+	0x7ff6a41cd946
+	0x7ff6a41b3457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987084" elapsed="0.000027"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987196" elapsed="0.000024"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987305" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987488" elapsed="0.000030"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987593" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987712" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987808" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.987917" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988033" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988130" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988239" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988350" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988458" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988571" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988681" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988774" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988864" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.988974" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989082" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989176" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989284" elapsed="0.000027"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989381" elapsed="0.000028"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989496" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989591" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989688" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989799" elapsed="0.000024"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989892" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.989982" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990072" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990183" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990293" elapsed="0.000024"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990389" elapsed="0.000020"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990480" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990588" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990681" elapsed="0.000020"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990788" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990897" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:00.990988" elapsed="0.000020"/>
+</kw>
+<arg>firstname=Rohith</arg>
+<arg>lastname=VH</arg>
+<arg>email=user1</arg>
+<arg>password=user1@123</arg>
+<arg>confirm_password=user1@123</arg>
+<arg>search_item=Laptop</arg>
+<status status="FAIL" start="2026-02-19T12:05:39.683658" elapsed="21.307451">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.75); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d49d
+	0x7ff6a3f489b2
+	0x7ff6a3f6ed75
+	0x7ff6a3fe8ec0
+	0x7ff6a4005072
+	0x7ff6a3fa8e38
+	0x7ff6a3fa9d23
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a41cd794
+	0x7ff6a41cd946
+	0x7ff6a41b3457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:05:39.681102" elapsed="21.310427">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=145.0.7632.75); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d49d
+	0x7ff6a3f489b2
+	0x7ff6a3f6ed75
+	0x7ff6a3fe8ec0
+	0x7ff6a4005072
+	0x7ff6a3fa8e38
+	0x7ff6a3fa9d23
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a41cd794
+	0x7ff6a41cd946
+	0x7ff6a41b3457
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t2" name="E2E Flow for user Bhargav" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:06:00.994469" level="INFO">Bhargav</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:06:00.994087" elapsed="0.000444"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:06:00.996951" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:00.997518" level="FAIL">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:06:00.994649" elapsed="0.049046">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.043942" elapsed="0.000035"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044075" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044174" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044267" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044381" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044476" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044585" elapsed="0.000024"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044690" elapsed="0.000022"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044801" elapsed="0.000029"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.044905" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045014" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045110" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045216" elapsed="0.000024"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045314" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045444" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045558" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045655" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045762" elapsed="0.000028"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045875" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.045984" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046093" elapsed="0.000022"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046201" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046292" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046385" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046490" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046599" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.046690" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.052324" elapsed="0.000085"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.052574" elapsed="0.000026"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.052715" elapsed="0.000024"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.052813" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.052909" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053023" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053118" elapsed="0.000020"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053253" elapsed="0.000021"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053345" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053452" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053565" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053658" elapsed="0.000020"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053747" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053861" elapsed="0.000030"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.053963" elapsed="0.000020"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.054052" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.054158" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.054247" elapsed="0.000020"/>
+</kw>
+<arg>firstname=Bhargav</arg>
+<arg>lastname=Bro</arg>
+<arg>email=user2</arg>
+<arg>password=Test@456</arg>
+<arg>confirm_password=Test@456</arg>
+<arg>search_item=Blue Jeans</arg>
+<status status="FAIL" start="2026-02-19T12:06:00.993684" elapsed="0.060695">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:06:00.992410" elapsed="0.062346">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t3" name="E2E Flow for user Akash" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:06:01.057067" level="INFO">Akash</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:06:01.056819" elapsed="0.000296"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:06:01.059525" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:01.060136" level="FAIL">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:06:01.057209" elapsed="0.005235">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.062685" elapsed="0.000037"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.062824" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.062925" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063021" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063137" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063234" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063342" elapsed="0.000039"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063462" elapsed="0.000021"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063563" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063659" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063795" elapsed="0.000031"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.063936" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064074" elapsed="0.000025"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064176" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064305" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064423" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064528" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064638" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064749" elapsed="0.000023"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064863" elapsed="0.000029"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.064991" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065106" elapsed="0.000024"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065232" elapsed="0.000026"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065337" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065495" elapsed="0.000028"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065622" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065723" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065838" elapsed="0.000083"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.065999" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066109" elapsed="0.000023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066207" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066307" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066428" elapsed="0.000024"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066529" elapsed="0.000020"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066623" elapsed="0.000020"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066715" elapsed="0.000022"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066837" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.066952" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067045" elapsed="0.000020"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067136" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067245" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067336" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067454" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067568" elapsed="0.000029"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.067667" elapsed="0.000021"/>
+</kw>
+<arg>firstname=Akash</arg>
+<arg>lastname=Sharma</arg>
+<arg>email=user4</arg>
+<arg>password=Hello@123</arg>
+<arg>confirm_password=Hello@123</arg>
+<arg>search_item=Fiction</arg>
+<status status="FAIL" start="2026-02-19T12:06:01.056521" elapsed="0.011295">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:06:01.055386" elapsed="0.012879">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<test id="s1-s1-t4" name="E2E Flow for user Rahul" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-19T12:06:01.071492" level="INFO">Rahul</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-19T12:06:01.071113" elapsed="0.000441"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-19T12:06:01.075210" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:01.075814" level="FAIL">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-19T12:06:01.071681" elapsed="0.005635">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.077559" elapsed="0.000034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.077688" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-male</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.077818" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${FIRSTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.077912" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${FIRSTNAME_FIELD}</arg>
+<arg>${firstname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078028" elapsed="0.000025"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LASTNAME_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078128" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${LASTNAME_FIELD}</arg>
+<arg>${lastname}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078237" elapsed="0.000022"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078338" elapsed="0.000021"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078438" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078537" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078646" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${PASSWORD_FIELD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078742" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078849" elapsed="0.000022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.078942" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${CONFIRM_PASSWORD}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079049" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${REGISTER_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079161" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079256" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079363" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079482" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${generated_email}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079598" elapsed="0.000031"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.079989" elapsed="0.000050"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGIN_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080164" elapsed="0.000031"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080314" elapsed="0.000026"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080414" elapsed="0.000020"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${SEARCH_BOX}</arg>
+<arg>${search_item}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080536" elapsed="0.000025"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SEARCH_BUTTON}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080652" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080750" elapsed="0.000021"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${FIRST_PRODUCT}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080860" elapsed="0.000023"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${ADD_TO_CART_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.080955" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${ADD_TO_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081063" elapsed="0.000022"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081161" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_BAR}</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081256" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${SHOPPING_CART}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081366" elapsed="0.000025"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081464" elapsed="0.000038"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081577" elapsed="0.000020"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${QTY_INPUT}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081670" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text Safe" owner="common">
+<arg>${QTY_INPUT}</arg>
+<arg>2</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081783" elapsed="0.000023"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081892" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.081982" elapsed="0.000020"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>${REMOVE_CHECKBOX}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082071" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${UPDATE_CART_BTN}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082218" elapsed="0.000027"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082314" elapsed="0.000021"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${LOGOUT_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082403" elapsed="0.000020"/>
+</kw>
+<kw name="Click Element Safe" owner="common">
+<arg>${LOGOUT_LINK}</arg>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082508" elapsed="0.000026"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-19T12:06:01.082666" elapsed="0.000023"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>email=user5</arg>
+<arg>password=Hello@456</arg>
+<arg>confirm_password=Hello@456</arg>
+<arg>search_item=Black &amp; White Diamond Heart</arg>
+<status status="FAIL" start="2026-02-19T12:06:01.070642" elapsed="0.012178">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-19T12:06:01.069146" elapsed="0.014177">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-19T12:06:01.085786" elapsed="3.098011"/>
+</kw>
+<status status="PASS" start="2026-02-19T12:06:01.085360" elapsed="3.098685"/>
+</kw>
+<status status="FAIL" start="2026-02-19T12:05:33.710516" elapsed="30.473589"/>
+</suite>
+<status status="FAIL" start="2026-02-19T12:05:33.659342" elapsed="30.526983"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="4" skip="0">Tests</stat>
+<stat name="E2E Flow" id="s1-s1" pass="0" fail="4" skip="0">Tests.E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-19T12:06:00.854731" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:00.996951" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:01.059525" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+<msg time="2026-02-19T12:06:01.075210" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6a41c4435
+	0x7ff6a41c4490
+	0x7ff6a3f5d286
+	0x7ff6a3fa7eb3
+	0x7ff6a3fe16d2
+	0x7ff6a3fdb821
+	0x7ff6a3fdaab3
+	0x7ff6a3f26295
+	0x7ff6a4493b30
+	0x7ff6a448e3b8
+	0x7ff6a44ae72a
+	0x7ff6a41e07e5
+	0x7ff6a41e978c
+	0x7ff6a3f250fa
+	0x7ff6a45f6798
+	0x7fffa196e8d7
+	0x7fffa250c40c
+</msg>
+</errors>
+</robot>

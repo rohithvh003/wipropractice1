@@ -25,4 +25,6 @@ def pytest_runtest_makereport(item):
     if rep.when == "call" and rep.failed:
         driver = item.funcargs["setup"]
         os.makedirs("screenshots", exist_ok=True)
-        driver.save_screenshot(f"screenshots/fail_{datetime.now().timestamp()}.png")
+        driver.save_screenshot(
+            f"screenshots/fail_{datetime.now().timestamp()}.png"
+        )

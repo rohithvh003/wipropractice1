@@ -3,9 +3,9 @@
         "id": 1,
         "name": "Hotel5847",
         "category": "Indian",
-        "location": "Hyderbad Updated",
+        "location": "Delhi",
         "contact": "999",
-        "active": true,
+        "active": false,
         "approved": true
     },
     {
@@ -16,5 +16,32 @@
         "contact": "999999",
         "active": true,
         "approved": true
+    },
+    {
+        "id": 3,
+        "name": "Pytest Hotel",
+        "category": "Indian",
+        "location": "Chennai",
+        "contact": "999",
+        "active": true,
+        "approved": false
+    },
+    {
+        "id": 4,
+        "name": "TestHotel",
+        "category": "Indian",
+        "location": null,
+        "contact": null,
+        "active": true,
+        "approved": true
+    },
+    {
+        "id": 5,
+        "name": "Hotel4911",
+        "category": "Indian",
+        "location": "City",
+        "contact": "999",
+        "active": true,
+        "approved": false
     }
 ]

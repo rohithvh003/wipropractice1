@@ -1,18 +1,21 @@
-import time
 import pytest
+import random
+import string
+from datetime import datetime
+import os
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 
 BASE_URL = "https://demowebshop.tricentis.com/"
 
 
-# ======================================================
-# FIXTURE
-# ======================================================
+# ---------- FIXTURE ----------
 @pytest.fixture
-def driver():
+def setup():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get(BASE_URL)
@@ -20,172 +23,83 @@ def driver():
     driver.quit()
 
 
-# ======================================================
-# TEST
-# ======================================================
-def test_full_ecommerce_flow(driver):
-    wait = WebDriverWait(driver, 20)
+# ---------- SCREENSHOT ON FAILURE ----------
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item):
+    outcome = yield
+    rep = outcome.get_result()
 
-    # ==================================================
-    # 1️⃣ REGISTER
-    # ==================================================
-    driver.find_element(By.LINK_TEXT, "Register").click()
+    if rep.when == "call" and rep.failed:
+        driver = item.funcargs["setup"]
+        os.makedirs("screenshots", exist_ok=True)
+        driver.save_screenshot(
+            f"screenshots/fail_{datetime.now().timestamp()}.png"
+        )
 
-    wait.until(EC.element_to_be_clickable((By.ID, "gender-male"))).click()
 
-    email = f"test{int(time.time())}@mail.com"
+# ---------- HELPER FUNCTION ----------
+def generate_email():
+    random_string = ''.join(random.choices(string.ascii_lowercase, k=5))
+    return f"auto_{random_string}@test.com"
 
-    driver.find_element(By.ID, "FirstName").send_keys("Test")
-    driver.find_element(By.ID, "LastName").send_keys("User")
+
+# ---------- COMPLETE END TO END TEST ----------
+def test_complete_ecommerce_flow(setup):
+    driver = setup
+    wait = WebDriverWait(driver, 10)
+
+    # ----------------- REGISTER -----------------
+    driver.find_element(By.CLASS_NAME, "ico-register").click()
+
+    email = generate_email()
+
+    driver.find_element(By.ID, "gender-male").click()
+    driver.find_element(By.ID, "FirstName").send_keys("Akash")
+    driver.find_element(By.ID, "LastName").send_keys("Tester")
     driver.find_element(By.ID, "Email").send_keys(email)
-    driver.find_element(By.ID, "Password").send_keys("Test@123")
-    driver.find_element(By.ID, "ConfirmPassword").send_keys("Test@123")
-
+    driver.find_element(By.ID, "Password").send_keys("Password123")
+    driver.find_element(By.ID, "ConfirmPassword").send_keys("Password123")
     driver.find_element(By.ID, "register-button").click()
 
-    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "result")))
-    print("✅ Registration successful")
+    assert "Your registration completed" in driver.page_source
 
-    # Continue (if exists)
-    try:
-        cont = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable(
-                (By.CSS_SELECTOR, "input.button-1.register-continue-button")
-            )
-        )
-        cont.click()
-    except:
-        print("ℹ Continue button skipped")
+    # ----------------- LOGOUT AFTER REGISTER -----------------
+    driver.find_element(By.CLASS_NAME, "ico-logout").click()
 
-    # ==================================================
-    # 2️⃣ LOGIN (already logged after register, but good practice)
-    # ==================================================
-    driver.find_element(By.LINK_TEXT, "Log out").click()
-    print("✅ Logged out after registration")
+    # ----------------- LOGIN -----------------
+    driver.find_element(By.CLASS_NAME, "ico-login").click()
 
-    driver.find_element(By.LINK_TEXT, "Log in").click()
-
-    wait.until(EC.visibility_of_element_located((By.ID, "Email"))).send_keys(email)
-    driver.find_element(By.ID, "Password").send_keys("Test@123")
+    driver.find_element(By.ID, "Email").send_keys(email)
+    driver.find_element(By.ID, "Password").send_keys("Password123")
     driver.find_element(By.CSS_SELECTOR, "input.login-button").click()
 
-    wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "Log out")))
-    print("✅ Login successful")
+    assert "My account" in driver.page_source
 
-    # ==================================================
-    # 3️⃣ SEARCH PRODUCT
-    # ==================================================
-    search = wait.until(
-        EC.element_to_be_clickable((By.ID, "small-searchterms"))
-    )
-    search.send_keys("computer")
-
+    # ----------------- SEARCH PRODUCT -----------------
+    driver.find_element(By.ID, "small-searchterms").send_keys("laptop")
     driver.find_element(By.CSS_SELECTOR, "input.search-box-button").click()
 
     wait.until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-item"))
-    )
-    print("✅ Search successful")
+        EC.element_to_be_clickable((By.CSS_SELECTOR, ".product-item h2 a"))
+    ).click()
 
-    # ==================================================
-    # 4️⃣ OPEN PRODUCT DETAILS
-    # ==================================================
-    first_product = driver.find_element(By.CSS_SELECTOR, ".product-item h2 a")
-    product_name = first_product.text
-    first_product.click()
-
-    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "product-name")))
-    print("✅ Product opened:", product_name)
-
-    # ==================================================
-    # 5️⃣ ADD TO CART
-    # ==================================================
-    # ==================================================
-    # 5️⃣ ADD TO CART (HANDLE CONFIGURABLE PRODUCT)
-    # ==================================================
-
-    # Select Processor
-    try:
-        processor = wait.until(
-            EC.element_to_be_clickable((By.ID, "product_attribute_1"))
-        )
-        processor.click()
-        processor.find_elements(By.TAG_NAME, "option")[1].click()
-        print("✅ Processor selected")
-    except:
-        pass
-
-    # Select RAM
-    try:
-        ram = wait.until(
-            EC.element_to_be_clickable((By.ID, "product_attribute_2"))
-        )
-        ram.click()
-        ram.find_elements(By.TAG_NAME, "option")[1].click()
-        print("✅ RAM selected")
-    except:
-        pass
-
-    # Now Add To Cart
-    add_btn = wait.until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "input[value='Add to cart']"))
-    )
-
-    driver.execute_script("arguments[0].scrollIntoView({block:'center'});", add_btn)
-
+    # ----------------- ADD TO CART -----------------
     wait.until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, "input[value='Add to cart']"))
     ).click()
 
-    wait.until(
-        EC.visibility_of_element_located((By.CLASS_NAME, "content"))
-    )
+    # ----------------- OPEN CART -----------------
+    driver.find_element(By.CLASS_NAME, "ico-cart").click()
 
-    print("✅ Added to cart")
+    assert "Shopping cart" in driver.page_source
 
-    # ==================================================
-    # 6️⃣ OPEN CART
-    # ==================================================
-    driver.find_element(By.CSS_SELECTOR, "span.cart-label").click()
-
-    wait.until(
-        EC.visibility_of_element_located((By.CLASS_NAME, "cart"))
-    )
-    print("✅ Cart opened")
-
-    # ==================================================
-    # 7️⃣ UPDATE CART
-    # ==================================================
-    qty = wait.until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "input.qty-input"))
-    )
-    qty.clear()
-    qty.send_keys("2")
-
+    # ----------------- REMOVE ITEM -----------------
+    driver.find_element(By.NAME, "removefromcart").click()
     driver.find_element(By.NAME, "updatecart").click()
-    print("✅ Cart updated")
 
-    # ==================================================
-    # 8️⃣ REMOVE ITEM
-    # ==================================================
-    remove = wait.until(
-        EC.element_to_be_clickable((By.NAME, "removefromcart"))
-    )
-    remove.click()
+    assert "empty" in driver.page_source.lower()
 
-    driver.find_element(By.NAME, "updatecart").click()
-    print("✅ Item removed")
+    # ----------------- LOGOUT -----------------
+    driver.find_element(By.CLASS_NAME, "ico-logout").click()
 
-    # ==================================================
-    # 9️⃣ LOGOUT
-    # ==================================================
-    wait.until(
-        EC.element_to_be_clickable((By.LINK_TEXT, "Log out"))
-    ).click()
-
-    wait.until(
-        EC.visibility_of_element_located((By.LINK_TEXT, "Log in"))
-    )
-
-    print("✅ Logout successful")
-
+    assert "Log in" in driver.page_source

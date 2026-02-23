@@ -1,5 +1,5 @@
 import json
 
 def get_data():
-    with open("data/test_data.json") as f:
+    with open("data/data.csv") as f:
         return json.load(f)
