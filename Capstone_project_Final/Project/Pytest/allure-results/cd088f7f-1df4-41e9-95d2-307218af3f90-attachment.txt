@@ -1,0 +1,24 @@
+2026-02-23 23:18:16,185 - INFO - ===== Starting Complete User Journey Test =====
+2026-02-23 23:18:16,188 - INFO - Clicking Register
+2026-02-23 23:18:17,067 - INFO - Generated email: user_0f3cae5f-85b7-464b-a55c-8f3007f84680@test.com
+2026-02-23 23:18:17,067 - INFO - Registering new user
+2026-02-23 23:18:19,481 - INFO - Registration successful
+2026-02-23 23:18:19,482 - INFO - Logging out after registration
+2026-02-23 23:18:20,760 - INFO - Clicking Login
+2026-02-23 23:18:21,551 - INFO - Logging in with registered credentials
+2026-02-23 23:18:23,167 - INFO - Login successful
+2026-02-23 23:18:23,168 - INFO - Searching product: Blue and green Sneaker
+2026-02-23 23:18:24,631 - INFO - Search results displayed
+2026-02-23 23:18:24,632 - INFO - Opening first product from results
+2026-02-23 23:18:26,627 - INFO - Product title and price verified
+2026-02-23 23:18:26,628 - INFO - Adding product to cart
+2026-02-23 23:18:27,243 - INFO - Product added to cart successfully
+2026-02-23 23:18:27,243 - INFO - Navigating to cart
+2026-02-23 23:18:28,388 - INFO - Updating cart quantity to 1
+2026-02-23 23:18:29,498 - INFO - Cart quantity updated successfully
+2026-02-23 23:18:29,498 - INFO - Removing item from cart
+2026-02-23 23:18:30,661 - INFO - Cart is empty after removal
+2026-02-23 23:18:30,662 - INFO - Logging out
+2026-02-23 23:18:32,933 - INFO - Validating session by accessing customer info page
+2026-02-23 23:18:33,984 - INFO - Session validation successful
+2026-02-23 23:18:33,984 - INFO - ===== Test Completed Successfully =====

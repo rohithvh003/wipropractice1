@@ -1,0 +1,24 @@
+2026-02-19 15:44:01,358 - INFO - ===== Starting Complete User Journey Test =====
+2026-02-19 15:44:01,360 - INFO - Clicking Register
+2026-02-19 15:44:01,867 - INFO - Generated email: user_3a725248-b8f5-450d-bf7f-29d3311f708f@test.com
+2026-02-19 15:44:01,867 - INFO - Registering new user
+2026-02-19 15:44:03,133 - INFO - Registration successful
+2026-02-19 15:44:03,134 - INFO - Logging out after registration
+2026-02-19 15:44:04,203 - INFO - Clicking Login
+2026-02-19 15:44:04,664 - INFO - Logging in with registered credentials
+2026-02-19 15:44:05,742 - INFO - Login successful
+2026-02-19 15:44:05,743 - INFO - Searching product: Album
+2026-02-19 15:44:06,753 - INFO - Search results displayed
+2026-02-19 15:44:06,754 - INFO - Opening first product from results
+2026-02-19 15:44:08,307 - INFO - Product title and price verified
+2026-02-19 15:44:08,307 - INFO - Adding product to cart
+2026-02-19 15:44:09,278 - INFO - Product added to cart successfully
+2026-02-19 15:44:09,278 - INFO - Navigating to cart
+2026-02-19 15:44:10,101 - INFO - Updating cart quantity to 4
+2026-02-19 15:44:10,719 - INFO - Cart quantity updated successfully
+2026-02-19 15:44:10,720 - INFO - Removing item from cart
+2026-02-19 15:44:11,498 - INFO - Cart is empty after removal
+2026-02-19 15:44:11,499 - INFO - Logging out
+2026-02-19 15:44:12,969 - INFO - Validating session by accessing customer info page
+2026-02-19 15:44:13,681 - INFO - Session validation successful
+2026-02-19 15:44:13,682 - INFO - ===== Test Completed Successfully =====

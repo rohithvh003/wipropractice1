@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-30T23:25:55.904510" rpa="false" schemaversion="5">
+<suite id="s1" name="Day13 login DD" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\Day13_login_DD.robot">
+<test id="s1-t1" name="Login Test with CSV Data" line="40">
+<kw name="Login Test Flow">
+<kw name="Open Application">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Application opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.105036" elapsed="0.001552"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.103967" elapsed="0.003125"/>
+</kw>
+<kw name="Input Username">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Username entered: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.109154" elapsed="0.002032"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.107710" elapsed="0.003915"/>
+</kw>
+<kw name="Input Password">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Password entered: ${password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.113950" elapsed="0.002398"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.112450" elapsed="0.004351"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login button clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.118666" elapsed="0.001845"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.117399" elapsed="0.003436"/>
+</kw>
+<kw name="Validate Login">
+<if>
+<branch type="IF" condition="$username == $valid_user and $password == $valid_password">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-30T23:25:56.126063" level="INFO">${result} = success</msg>
+<var>${result}</var>
+<arg>success</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.124974" elapsed="0.001223"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.123845" elapsed="0.002494"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>failure</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-30T23:25:56.126858" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T23:25:56.126477" elapsed="0.000549"/>
+</branch>
+<status status="PASS" start="2026-01-30T23:25:56.123633" elapsed="0.003487"/>
+</if>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Expected: ${expected_result} | Actual: ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.127377" elapsed="0.001540"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.129458" elapsed="0.001909"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${expected_result}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.122222" elapsed="0.009477"/>
+</kw>
+<arg>username=admin</arg>
+<arg>password=admin123</arg>
+<arg>expected_result=success</arg>
+<status status="PASS" start="2026-01-30T23:25:56.102624" elapsed="0.029223"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.097831" elapsed="0.035335"/>
+</test>
+<test id="s1-t2" name="Login Test with CSV Data" line="40">
+<kw name="Login Test Flow">
+<kw name="Open Application">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Application opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.142324" elapsed="0.001425"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.141598" elapsed="0.002453"/>
+</kw>
+<kw name="Input Username">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Username entered: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.145493" elapsed="0.001458"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.144506" elapsed="0.002750"/>
+</kw>
+<kw name="Input Password">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Password entered: ${password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.148750" elapsed="0.001485"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.147745" elapsed="0.002838"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login button clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.152306" elapsed="0.002362"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.151170" elapsed="0.003944"/>
+</kw>
+<kw name="Validate Login">
+<if>
+<branch type="IF" condition="$username == $valid_user and $password == $valid_password">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>success</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-30T23:25:56.157190" elapsed="0.000045"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T23:25:56.156615" elapsed="0.000696"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-30T23:25:56.158184" level="INFO">${result} = failure</msg>
+<var>${result}</var>
+<arg>failure</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.157515" elapsed="0.000742"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.157374" elapsed="0.000954"/>
+</branch>
+<status status="PASS" start="2026-01-30T23:25:56.156546" elapsed="0.001825"/>
+</if>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Expected: ${expected_result} | Actual: ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.158523" elapsed="0.001032"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.160080" elapsed="0.001248"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${expected_result}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.155791" elapsed="0.005848"/>
+</kw>
+<arg>username=admin</arg>
+<arg>password=wrongpass	</arg>
+<arg>expected_result=failure</arg>
+<status status="PASS" start="2026-01-30T23:25:56.140556" elapsed="0.021259"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.134963" elapsed="0.027738"/>
+</test>
+<test id="s1-t3" name="Login Test with CSV Data" line="40">
+<kw name="Login Test Flow">
+<kw name="Open Application">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Application opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.171888" elapsed="0.001308"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.170635" elapsed="0.002890"/>
+</kw>
+<kw name="Input Username">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Username entered: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.175036" elapsed="0.002278"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.174015" elapsed="0.003701"/>
+</kw>
+<kw name="Input Password">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Password entered: ${password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.179654" elapsed="0.001359"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.178248" elapsed="0.003035"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login button clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.182790" elapsed="0.001421"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.181859" elapsed="0.002836"/>
+</kw>
+<kw name="Validate Login">
+<if>
+<branch type="IF" condition="$username == $valid_user and $password == $valid_password">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>success</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-30T23:25:56.189641" elapsed="0.000087"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T23:25:56.188711" elapsed="0.001183"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-30T23:25:56.191538" level="INFO">${result} = failure</msg>
+<var>${result}</var>
+<arg>failure</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.190321" elapsed="0.001512"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.190012" elapsed="0.002021"/>
+</branch>
+<status status="PASS" start="2026-01-30T23:25:56.188606" elapsed="0.003525"/>
+</if>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Expected: ${expected_result} | Actual: ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.192597" elapsed="0.002110"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2026-01-30T23:25:56.197369" level="FAIL">failure != success</msg>
+<arg>${result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2026-01-30T23:25:56.195451" elapsed="0.002832">failure != success</status>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${expected_result}</arg>
+<status status="FAIL" start="2026-01-30T23:25:56.187279" elapsed="0.011607">failure != success</status>
+</kw>
+<arg>username=user1</arg>
+<arg>password=user123</arg>
+<arg>expected_result=success</arg>
+<status status="FAIL" start="2026-01-30T23:25:56.168815" elapsed="0.032670">failure != success</status>
+</kw>
+<status status="FAIL" start="2026-01-30T23:25:56.164103" elapsed="0.040123">failure != success</status>
+</test>
+<test id="s1-t4" name="Login Test with CSV Data" line="40">
+<kw name="Login Test Flow">
+<kw name="Open Application">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Application opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.216218" elapsed="0.002060"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.215557" elapsed="0.003182"/>
+</kw>
+<kw name="Input Username">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Username entered: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.220220" elapsed="0.001399"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.219221" elapsed="0.002678"/>
+</kw>
+<kw name="Input Password">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Password entered: ${password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.222906" elapsed="0.001013"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.222257" elapsed="0.001980"/>
+</kw>
+<kw name="Click Login Button">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login button clicked</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.225858" elapsed="0.001503"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.224735" elapsed="0.002941"/>
+</kw>
+<kw name="Validate Login">
+<if>
+<branch type="IF" condition="$username == $valid_user and $password == $valid_password">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${result}</var>
+<arg>success</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-01-30T23:25:56.229812" elapsed="0.000066"/>
+</kw>
+<status status="NOT RUN" start="2026-01-30T23:25:56.229188" elapsed="0.000819"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-30T23:25:56.231342" level="INFO">${result} = failure</msg>
+<var>${result}</var>
+<arg>failure</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.230323" elapsed="0.001102"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.230099" elapsed="0.001416"/>
+</branch>
+<status status="PASS" start="2026-01-30T23:25:56.229131" elapsed="0.002452"/>
+</if>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Expected: ${expected_result} | Actual: ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.231826" elapsed="0.003006"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-30T23:25:56.235674" elapsed="0.002273"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${expected_result}</arg>
+<status status="PASS" start="2026-01-30T23:25:56.228316" elapsed="0.009979"/>
+</kw>
+<arg>username=user2</arg>
+<arg>password=wrong</arg>
+<arg>expected_result=failure</arg>
+<status status="PASS" start="2026-01-30T23:25:56.214009" elapsed="0.024522"/>
+</kw>
+<status status="PASS" start="2026-01-30T23:25:56.206717" elapsed="0.032761"/>
+</test>
+<status status="FAIL" start="2026-01-30T23:25:55.918304" elapsed="0.322887"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Day13 login DD" id="s1" pass="3" fail="1" skip="0">Day13 login DD</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-30T23:25:56.135122" level="WARN">Multiple tests with name 'Login Test with CSV Data' executed in suite 'Day13 login DD'.</msg>
+<msg time="2026-01-30T23:25:56.164273" level="WARN">Multiple tests with name 'Login Test with CSV Data' executed in suite 'Day13 login DD'.</msg>
+<msg time="2026-01-30T23:25:56.206924" level="WARN">Multiple tests with name 'Login Test with CSV Data' executed in suite 'Day13 login DD'.</msg>
+</errors>
+</robot>

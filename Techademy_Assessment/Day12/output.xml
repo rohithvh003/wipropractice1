@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-01T18:12:15.087191" rpa="false" schemaversion="5">
+<suite id="s1" name="Day12 Q2" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\Techademy_Assessment\day12\Day12_Q2.robot">
+<test id="s1-t1" name="Check Environment" line="6">
+<kw name="Run Process" owner="Process">
+<msg time="2026-02-01T18:12:16.123474" level="INFO">Starting process:
+python --version</msg>
+<msg time="2026-02-01T18:12:16.136958" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-02-01T18:12:16.157311" level="INFO">Process completed.</msg>
+<msg time="2026-02-01T18:12:16.157867" level="INFO">${py} = &lt;result object with rc 0&gt;</msg>
+<var>${py}</var>
+<arg>python</arg>
+<arg>--version</arg>
+<arg>stdout=YES</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-02-01T18:12:16.120407" elapsed="0.037567"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Python Installed: ${py.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:12:16.159413" elapsed="0.029109"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-02-01T18:12:16.190678" level="INFO">Starting process:
+robot --version</msg>
+<msg time="2026-02-01T18:12:16.200101" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-02-01T18:12:17.492180" level="INFO">Process completed.</msg>
+<msg time="2026-02-01T18:12:17.492623" level="INFO">${rb} = &lt;result object with rc 251&gt;</msg>
+<var>${rb}</var>
+<arg>robot</arg>
+<arg>--version</arg>
+<arg>stdout=YES</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-02-01T18:12:16.189209" elapsed="1.303488"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Installed: ${rb.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:12:17.493542" elapsed="0.006484"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-02-01T18:12:17.502204" level="INFO">${ver} = 7.4.1</msg>
+<var>${ver}</var>
+<arg>__import__('robot').__version__</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-02-01T18:12:17.500933" elapsed="0.001378"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Framework Version: ${ver}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:12:17.503042" elapsed="0.001449"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SeleniumLibrary Imported Successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-01T18:12:17.505233" elapsed="0.001053"/>
+</kw>
+<status status="PASS" start="2026-02-01T18:12:16.117159" elapsed="1.389881"/>
+</test>
+<status status="PASS" start="2026-02-01T18:12:15.092513" elapsed="2.416484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Day12 Q2" id="s1" pass="1" fail="0" skip="0">Day12 Q2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

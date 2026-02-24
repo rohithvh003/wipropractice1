@@ -1,0 +1,10 @@
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:25 ===== Starting Complete User Journey Test =====
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:28 Clicking Register
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:35 Generated email: user_5761d65c-65ca-4349-ba5e-80e2e5183ea1@test.com
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:37 Registering new user
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:47 Registration successful
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:50 Logging out after registration
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:54 Clicking Login
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:58 Logging in with registered credentials
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:62 Login successful
+[32mINFO    [0m test_complete_user_journey[ROHITH_]:test_complete_user_journey.py:65 Searching product:

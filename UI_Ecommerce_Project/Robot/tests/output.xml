@@ -1,0 +1,2865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-18T23:21:24.568301" rpa="false" schemaversion="5">
+<suite id="s1" name="E2E Flow" source="C:\Users\Rohith\PycharmProjects\pythonProjectwipro\UI_Ecommerce_Project\Robot\tests\E2E_Flow.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:25.523738" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-18T23:21:25.523228" elapsed="12.768892"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.293472" elapsed="0.079035"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.373023" elapsed="0.001454"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:38.375581" level="INFO">Capture Page Screenshot will be run on failure.</msg>
+<arg>Capture Page Screenshot</arg>
+<doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.375059" elapsed="0.000736"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:21:25.521296" elapsed="12.854817"/>
+</kw>
+<test id="s1-t1" name="E2E Flow for user Rohith" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:21:38.383992" level="INFO">Rohith</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.383004" elapsed="0.001390"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:21:38.386768" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.385688" elapsed="0.001212"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:40.555343" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:21:38.387285" elapsed="2.168389"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:40.556622" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:21:40.556132" elapsed="2.699086"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:45.280754" level="INFO">Current page contains text 'Register'.</msg>
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:21:43.255755" elapsed="2.025322"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:45.281993" level="INFO">Clicking element 'id:gender-female'.</msg>
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:21:45.281534" elapsed="2.153969"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:21:47.436389" level="INFO">Entering Firstname</msg>
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:21:47.435900" elapsed="0.000568"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:49.470240" level="INFO">Element 'id:FirstName' is displayed.</msg>
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:21:47.436653" elapsed="2.033915"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:49.471745" level="INFO">Typing text 'Rohith' into text field 'id:FirstName'.</msg>
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:21:49.471036" elapsed="3.299924"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:21:52.772300" level="INFO">Entering Lastname</msg>
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:21:52.771483" elapsed="0.001022"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:54.816419" level="INFO">Element 'id:LastName' is displayed.</msg>
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:21:52.772899" elapsed="2.043771"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:21:54.817375" level="INFO">Typing text 'VH' into text field 'id:LastName'.</msg>
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:21:54.816982" elapsed="3.191422"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-18T23:21:58.009848" level="INFO">${random} = 8486</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-18T23:21:58.009050" elapsed="0.000872"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-18T23:21:58.010760" level="INFO">${generated_email} = user18486@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-18T23:21:58.010171" elapsed="0.000638"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:21:58.011328" level="INFO">Entering Email</msg>
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:21:58.010996" elapsed="0.000407"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:00.046595" level="INFO">Element 'id:Email' is displayed.</msg>
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:21:58.011564" elapsed="2.035382"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:00.048050" level="INFO">Typing text 'user18486@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:00.047433" elapsed="3.247678"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:03.296392" level="INFO">Entering Password</msg>
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:03.295632" elapsed="0.000889"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:05.329509" level="INFO">Element 'id:Password' is displayed.</msg>
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:03.296796" elapsed="2.032986"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:05.330672" level="INFO">Typing text 'user1@123' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:05.330180" elapsed="3.164851"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:08.496375" level="INFO">Entering Confirm Password</msg>
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:08.495600" elapsed="0.001010"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:10.533220" level="INFO">Element 'id:ConfirmPassword' is displayed.</msg>
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:08.497023" elapsed="2.036436"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:10.534224" level="INFO">Typing text 'user1@123' into text field 'id:ConfirmPassword'.</msg>
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:10.533780" elapsed="3.158030"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:13.692482" level="INFO">Clicking button 'id:register-button'.</msg>
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:13.692161" elapsed="4.421780"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:18.114893" level="INFO">Registration Successful</msg>
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:18.114358" elapsed="0.000636"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:20.139127" level="INFO">Current page contains text 'Your registration completed'.</msg>
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:22:18.115154" elapsed="2.024272"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:20.140433" level="INFO">Logging out after registration</msg>
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:20.139842" elapsed="0.000740"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:20.141273" level="INFO">Clicking element 'xpath://a[text()='Log out']'.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:20.140888" elapsed="3.201463"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:23.343708" level="INFO">Logging in with registered credentials</msg>
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:23.342911" elapsed="0.000932"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:23.344492" level="INFO">Clicking element 'xpath://a[text()='Log in']'.</msg>
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:23.344129" elapsed="2.587879"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:25.933073" level="INFO">Typing text 'user18486@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:25.932419" elapsed="3.204959"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:29.138230" level="INFO">Typing text 'user1@123' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:29.137765" elapsed="3.189897"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:32.328677" level="INFO">Clicking button 'xpath://input[@value='Log in']'.</msg>
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:32.328189" elapsed="4.004168"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:38.360562" level="INFO">Element 'xpath://a[text()='Log out']' is displayed.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:36.332886" elapsed="2.028082"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:38.362206" level="INFO">Search bar should be visible</msg>
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:38.361434" elapsed="0.000938"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:40.401597" level="INFO">Element 'id:small-searchterms' is displayed.</msg>
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:38.362726" elapsed="2.039096"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:40.402662" level="INFO">Entering search product</msg>
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:40.402118" elapsed="0.000612"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:40.403167" level="INFO">Typing text 'Laptop' into text field 'id:small-searchterms'.</msg>
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:40.402883" elapsed="3.191757"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:43.595448" level="INFO">Clicking element 'xpath://input[@value='Search']'.</msg>
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:43.595055" elapsed="3.176004"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:46.772048" level="INFO">Verifying search results</msg>
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:46.771516" elapsed="0.000605"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:48.796095" level="INFO">Current page contains text 'Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:22:46.772279" elapsed="2.024060"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:22:48.797179" level="INFO">Opening product details</msg>
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:22:48.796672" elapsed="0.000571"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:48.797655" level="INFO">Clicking element 'xpath:(//h2[@class='product-title']/a)[1]'.</msg>
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:48.797403" elapsed="3.681369"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:54.513171" level="INFO">Element 'xpath://input[@value='Add to cart']' is displayed.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:52.479301" elapsed="2.034242"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:22:54.514448" level="INFO">Clicking element 'xpath://input[@value='Add to cart']'.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:22:54.513957" elapsed="2.150802"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:22:56.665281" elapsed="2.032036"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:00.752840" level="INFO">Element 'id:bar-notification' contains text 'The product has been added'.</msg>
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-18T23:22:58.697698" elapsed="2.055425"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:00.754179" level="INFO">The product has been added to the cart</msg>
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:00.753525" elapsed="0.000799"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:00.755079" level="INFO">Clicking element 'xpath://span[text()='Shopping cart']'.</msg>
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:00.754633" elapsed="2.890740"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:05.666190" level="INFO">Current page contains text 'Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:23:03.645849" elapsed="2.020616"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:05.667503" level="INFO">Updating quantity</msg>
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:05.666864" elapsed="0.000763"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:07.698243" level="INFO">Element 'xpath://input[contains(@class,'qty-input')]' is displayed.</msg>
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:05.667947" elapsed="2.030620"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:07.699010" elapsed="2.089229"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:09.788911" level="INFO">Typing text '2' into text field 'xpath://input[contains(@class,'qty-input')]'.</msg>
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:09.788583" elapsed="3.171866"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:12.961146" level="INFO">Clicking element 'xpath://input[@name='updatecart']'.</msg>
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:12.960815" elapsed="2.926235"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:17.909615" level="INFO">Current page contains text 'Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:23:15.887607" elapsed="2.022316"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:17.911034" level="INFO">Removing item from cart</msg>
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:17.910353" elapsed="0.000827"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:17.911875" level="INFO">Selecting checkbox 'xpath://input[@name='removefromcart']'.</msg>
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:17.911485" elapsed="5.191693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:23.104074" level="INFO">Clicking element 'xpath://input[@name='updatecart']'.</msg>
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:23.103675" elapsed="2.560989"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:27.693033" level="INFO">Current page contains text 'Your Shopping Cart is empty!'.</msg>
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:23:25.665127" elapsed="2.028226"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:27.694388" level="INFO">Logging out</msg>
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:27.693799" elapsed="0.000657"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:29.720216" level="INFO">Element 'xpath://a[text()='Log out']' is displayed.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:27.694609" elapsed="2.025903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:29.721393" level="INFO">Clicking element 'xpath://a[text()='Log out']'.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:29.720913" elapsed="3.594860"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:35.351011" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:33.316300" elapsed="2.035034"/>
+</kw>
+<arg>firstname=Rohith</arg>
+<arg>lastname=VH</arg>
+<arg>email=user1</arg>
+<arg>password=user1@123</arg>
+<arg>confirm_password=user1@123</arg>
+<arg>search_item=Laptop</arg>
+<status status="PASS" start="2026-02-18T23:21:38.381317" elapsed="116.970306"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:21:38.376358" elapsed="116.975876"/>
+</test>
+<test id="s1-t2" name="E2E Flow for user Ritesh" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:35.355881" level="INFO">Ritesh</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:35.355458" elapsed="0.000505"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:35.356371" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:35.356121" elapsed="0.000342"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:37.411140" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:35.358933" elapsed="2.052618"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:37.412552" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:37.412027" elapsed="2.802695"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:42.244274" level="INFO">Current page contains text 'Register'.</msg>
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:23:40.215209" elapsed="2.029408"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:42.245372" level="INFO">Clicking element 'id:gender-female'.</msg>
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:42.245023" elapsed="2.121333"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:44.367593" level="INFO">Entering Firstname</msg>
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:44.366813" elapsed="0.000933"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:46.474569" level="INFO">Element 'id:FirstName' is displayed.</msg>
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:44.368099" elapsed="2.106719"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:46.475594" level="INFO">Typing text 'Ritesh' into text field 'id:FirstName'.</msg>
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:46.475147" elapsed="3.157704"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:49.633963" level="INFO">Entering Lastname</msg>
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:49.633266" elapsed="0.000812"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:51.688126" level="INFO">Element 'id:LastName' is displayed.</msg>
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:49.634372" elapsed="2.054051"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:51.694912" level="INFO">Typing text 'Kumar' into text field 'id:LastName'.</msg>
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:51.688835" elapsed="3.210531"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-18T23:23:54.900455" level="INFO">${random} = 3429</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-18T23:23:54.899906" elapsed="0.000598"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-18T23:23:54.901179" level="INFO">${generated_email} = user13429@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-18T23:23:54.900660" elapsed="0.000562"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:23:54.901639" level="INFO">Entering Email</msg>
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:23:54.901375" elapsed="0.000326"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:56.931146" level="INFO">Element 'id:Email' is displayed.</msg>
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:23:54.901845" elapsed="2.029589"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:23:56.932575" level="INFO">Typing text 'user13429@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:23:56.931858" elapsed="3.171452"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:00.104114" level="INFO">Entering Password</msg>
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:00.103672" elapsed="0.000517"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:02.130155" level="INFO">Element 'id:Password' is displayed.</msg>
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:00.104352" elapsed="2.026088"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:02.131382" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:02.130830" elapsed="3.152618"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:05.284603" level="INFO">Entering Confirm Password</msg>
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:05.283990" elapsed="0.000689"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:07.316498" level="INFO">Element 'id:ConfirmPassword' is displayed.</msg>
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:05.284839" elapsed="2.031949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:07.317928" level="INFO">Typing text 'Test@123' into text field 'id:ConfirmPassword'.</msg>
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:07.317223" elapsed="3.185042"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:10.502997" level="INFO">Clicking button 'id:register-button'.</msg>
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:10.502647" elapsed="4.370953"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:14.875002" level="INFO">Registration Successful</msg>
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:14.874407" elapsed="0.000708"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:16.902639" level="INFO">Current page contains text 'Your registration completed'.</msg>
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:24:14.875389" elapsed="2.027539"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:16.903934" level="INFO">Logging out after registration</msg>
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:16.903324" elapsed="0.000745"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:16.904961" level="INFO">Clicking element 'xpath://a[text()='Log out']'.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:16.904416" elapsed="3.306917"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:20.214025" level="INFO">Logging in with registered credentials</msg>
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:20.212569" elapsed="0.001660"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:20.214919" level="INFO">Clicking element 'xpath://a[text()='Log in']'.</msg>
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:20.214563" elapsed="2.735463"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:22.951604" level="INFO">Typing text 'user13429@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:22.950503" elapsed="3.161038"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:26.112647" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:26.112068" elapsed="3.209990"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:29.322747" level="INFO">Clicking button 'xpath://input[@value='Log in']'.</msg>
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:29.322411" elapsed="4.656219"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:36.009478" level="INFO">Element 'xpath://a[text()='Log out']' is displayed.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:33.979158" elapsed="2.030776"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:36.011571" level="INFO">Search bar should be visible</msg>
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:36.010518" elapsed="0.001196"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:38.067904" level="INFO">Element 'id:small-searchterms' is displayed.</msg>
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:36.012054" elapsed="2.056138"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:38.069131" level="INFO">Entering search product</msg>
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:38.068548" elapsed="0.000696"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:38.070097" level="INFO">Typing text '14.1-inch Laptop' into text field 'id:small-searchterms'.</msg>
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:38.069625" elapsed="3.162940"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:41.233424" level="INFO">Clicking element 'xpath://input[@value='Search']'.</msg>
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:41.232989" elapsed="2.152972"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:43.387212" level="INFO">Verifying search results</msg>
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:43.386547" elapsed="0.000766"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:45.411549" level="INFO">Current page contains text '14.1-inch Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:24:43.387605" elapsed="2.024176"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:45.412828" level="INFO">Opening product details</msg>
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:45.412237" elapsed="0.000714"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:45.413624" level="INFO">Clicking element 'xpath:(//h2[@class='product-title']/a)[1]'.</msg>
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:45.413260" elapsed="3.378694"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:50.826876" level="INFO">Element 'xpath://input[@value='Add to cart']' is displayed.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:48.792468" elapsed="2.034691"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:50.828031" level="INFO">Clicking element 'xpath://input[@value='Add to cart']'.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:50.827554" elapsed="2.120628"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:24:52.948717" elapsed="2.030145"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:57.017582" level="INFO">Element 'id:bar-notification' contains text 'The product has been added'.</msg>
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-02-18T23:24:54.979438" elapsed="2.038464"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:24:57.019097" level="INFO">The product has been added to the cart</msg>
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:24:57.018364" elapsed="0.000846"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:24:57.019760" level="INFO">Clicking element 'xpath://span[text()='Shopping cart']'.</msg>
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:24:57.019494" elapsed="2.762746"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:01.802953" level="INFO">Current page contains text '14.1-inch Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:24:59.782628" elapsed="2.020637"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:01.804668" level="INFO">Updating quantity</msg>
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:01.803701" elapsed="0.001200"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:03.841231" level="INFO">Element 'xpath://input[contains(@class,'qty-input')]' is displayed.</msg>
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:01.805288" elapsed="2.036249"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:03.841983" elapsed="2.069125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:05.911875" level="INFO">Typing text '2' into text field 'xpath://input[contains(@class,'qty-input')]'.</msg>
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:05.911493" elapsed="3.154346"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:09.066763" level="INFO">Clicking element 'xpath://input[@name='updatecart']'.</msg>
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:09.066308" elapsed="2.869034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:13.959471" level="INFO">Current page contains text '14.1-inch Laptop'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:25:11.935693" elapsed="2.024094"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:13.960825" level="INFO">Removing item from cart</msg>
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:13.960239" elapsed="0.000654"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:13.961313" level="INFO">Selecting checkbox 'xpath://input[@name='removefromcart']'.</msg>
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:13.961047" elapsed="5.171068"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:19.133165" level="INFO">Clicking element 'xpath://input[@name='updatecart']'.</msg>
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:19.132574" elapsed="2.509226"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:23.666117" level="INFO">Current page contains text 'Your Shopping Cart is empty!'.</msg>
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:25:21.642191" elapsed="2.024219"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:23.667477" level="INFO">Logging out</msg>
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:23.666856" elapsed="0.000739"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:25.691620" level="INFO">Element 'xpath://a[text()='Log out']' is displayed.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:23.667832" elapsed="2.024100"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:25.692810" level="INFO">Clicking element 'xpath://a[text()='Log out']'.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:25.692380" elapsed="3.012199"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:30.738727" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:28.705114" elapsed="2.034065"/>
+</kw>
+<arg>firstname=Ritesh</arg>
+<arg>lastname=Kumar</arg>
+<arg>email=user1</arg>
+<arg>password=Test@123</arg>
+<arg>confirm_password=Test@123</arg>
+<arg>search_item=14.1-inch Laptop</arg>
+<status status="PASS" start="2026-02-18T23:23:35.354885" elapsed="115.384600"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:23:35.353000" elapsed="115.387258"/>
+</test>
+<test id="s1-t3" name="E2E Flow for user Bhargav" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:30.744845" level="INFO">Bhargav</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:30.744091" elapsed="0.000878"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:30.745490" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:30.745189" elapsed="0.000375"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:32.783797" level="INFO">Element 'xpath://a[text()='Register']' is displayed.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:30.745923" elapsed="2.038275"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:32.786157" level="INFO">Clicking element 'xpath://a[text()='Register']'.</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:32.785550" elapsed="2.671551"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:37.512955" level="INFO">Current page contains text 'Register'.</msg>
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:25:35.457631" elapsed="2.055645"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:37.514252" level="INFO">Clicking element 'id:gender-female'.</msg>
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:37.513726" elapsed="2.135132"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:39.649670" level="INFO">Entering Firstname</msg>
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:39.649203" elapsed="0.000542"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:41.680836" level="INFO">Element 'id:FirstName' is displayed.</msg>
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:39.649899" elapsed="2.031261"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:41.682140" level="INFO">Typing text 'Bhargav' into text field 'id:FirstName'.</msg>
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:41.681565" elapsed="3.191444"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:44.874114" level="INFO">Entering Lastname</msg>
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:44.873550" elapsed="0.000712"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:46.906296" level="INFO">Element 'id:LastName' is displayed.</msg>
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:44.874439" elapsed="2.032211"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:46.907825" level="INFO">Typing text 'Bro' into text field 'id:LastName'.</msg>
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:46.907099" elapsed="3.157609"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2026-02-18T23:25:50.065460" level="INFO">${random} = 9151</msg>
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2026-02-18T23:25:50.065066" elapsed="0.000457"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-18T23:25:50.066392" level="INFO">${generated_email} = user29151@mail.com</msg>
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-18T23:25:50.065686" elapsed="0.000779"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:50.067209" level="INFO">Entering Email</msg>
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:50.066785" elapsed="0.000507"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:52.100751" level="INFO">Element 'id:Email' is displayed.</msg>
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:50.067481" elapsed="2.033513"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:52.101785" level="INFO">Typing text 'user29151@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:52.101321" elapsed="3.236787"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:25:55.339244" level="INFO">Entering Password</msg>
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:25:55.338577" elapsed="0.000783"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:57.366557" level="INFO">Element 'id:Password' is displayed.</msg>
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:25:55.339618" elapsed="2.027248"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:25:57.367850" level="INFO">Typing text 'Test@456' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:25:57.367280" elapsed="3.164133"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:00.532872" level="INFO">Entering Confirm Password</msg>
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:00.531938" elapsed="0.001026"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:02.567016" level="INFO">Element 'id:ConfirmPassword' is displayed.</msg>
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:26:00.533172" elapsed="2.034215"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:02.568526" level="INFO">Typing text 'Test@456' into text field 'id:ConfirmPassword'.</msg>
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:02.567828" elapsed="3.154775"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:05.723955" level="INFO">Clicking button 'id:register-button'.</msg>
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:05.723110" elapsed="4.851069"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:10.575298" level="INFO">Registration Successful</msg>
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:10.574652" elapsed="0.000761"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:12.596239" level="INFO">Current page contains text 'Your registration completed'.</msg>
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:26:10.575731" elapsed="2.020982"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:12.597890" level="INFO">Logging out after registration</msg>
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:12.597184" elapsed="0.000823"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:12.598698" level="INFO">Clicking element 'xpath://a[text()='Log out']'.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:12.598288" elapsed="3.055384"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:15.654546" level="INFO">Logging in with registered credentials</msg>
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:15.654106" elapsed="0.000511"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:15.655020" level="INFO">Clicking element 'xpath://a[text()='Log in']'.</msg>
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:15.654791" elapsed="2.769473"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:18.425474" level="INFO">Typing text 'user29151@mail.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:18.424822" elapsed="3.160849"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:21.586511" level="INFO">Typing text 'Test@456' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:21.586061" elapsed="3.147097"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:24.733961" level="INFO">Clicking button 'xpath://input[@value='Log in']'.</msg>
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:24.733539" elapsed="4.076000"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:30.836151" level="INFO">Element 'xpath://a[text()='Log out']' is displayed.</msg>
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:26:28.809961" elapsed="2.026852"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:30.838746" level="INFO">Search bar should be visible</msg>
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:30.837377" elapsed="0.001637"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:32.885587" level="INFO">Element 'id:small-searchterms' is displayed.</msg>
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:26:30.839434" elapsed="2.046549"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:32.886857" level="INFO">Entering search product</msg>
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:32.886313" elapsed="0.000643"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:32.887567" level="INFO">Typing text 'Blue Jeans' into text field 'id:small-searchterms'.</msg>
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:32.887220" elapsed="3.226842"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:36.115038" level="INFO">Clicking element 'xpath://input[@value='Search']'.</msg>
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:36.114558" elapsed="3.349079"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:39.464747" level="INFO">Verifying search results</msg>
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:39.464087" elapsed="0.000792"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:41.491375" level="INFO">Current page contains text 'Blue Jeans'.</msg>
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-02-18T23:26:39.465159" elapsed="2.026531"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:41.492862" level="INFO">Opening product details</msg>
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:41.492139" elapsed="0.000838"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:41.493596" level="INFO">Clicking element 'xpath:(//h2[@class='product-title']/a)[1]'.</msg>
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:41.493279" elapsed="4.360407"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:47.885476" level="INFO">Element 'xpath://input[@value='Add to cart']' is displayed.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-18T23:26:45.854222" elapsed="2.031530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:47.886499" level="INFO">Clicking element 'xpath://input[@value='Add to cart']'.</msg>
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-18T23:26:47.886085" elapsed="2.082190"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:49.975760" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:49.977510" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-18T23:26:49.968732" elapsed="0.241866">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211001" elapsed="0.000063"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211214" elapsed="0.000039"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211393" elapsed="0.000037"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211552" elapsed="0.000036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211737" elapsed="0.000039"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.211903" elapsed="0.000037"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212064" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212225" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212399" elapsed="0.000053"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212626" elapsed="0.000037"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212782" elapsed="0.000036"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.212939" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213095" elapsed="0.000036"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213249" elapsed="0.000036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213408" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213564" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213732" elapsed="0.000039"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.213891" elapsed="0.000035"/>
+</kw>
+<arg>firstname=Bhargav</arg>
+<arg>lastname=Bro</arg>
+<arg>email=user2</arg>
+<arg>password=Test@456</arg>
+<arg>confirm_password=Test@456</arg>
+<arg>search_item=Blue Jeans</arg>
+<status status="FAIL" start="2026-02-18T23:25:30.743413" elapsed="79.470753">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-18T23:25:30.741169" elapsed="79.473757">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</test>
+<test id="s1-t4" name="E2E Flow for user Sana" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.221299" level="INFO">Sana</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.220787" elapsed="0.000604"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.222048" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.221651" elapsed="0.000488"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:50.227809" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.229012" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-18T23:26:50.222336" elapsed="0.053782">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.276489" elapsed="0.000056"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.276680" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.276837" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.276997" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.277150" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.277304" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.277480" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.277660" elapsed="0.000039"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.277871" elapsed="0.000037"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278042" elapsed="0.000035"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278226" elapsed="0.000037"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278386" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278547" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278719" elapsed="0.000039"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.278879" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.279032" elapsed="0.000041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.279466" elapsed="0.000093"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.279821" elapsed="0.000062"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280028" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280233" elapsed="0.000050"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280422" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280585" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280753" elapsed="0.000038"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.280909" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281060" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281206" elapsed="0.000032"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281374" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281525" elapsed="0.000032"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281678" elapsed="0.000033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281841" elapsed="0.000033"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.281993" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282142" elapsed="0.000033"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282307" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282457" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282607" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282770" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.282918" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283070" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283216" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283365" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283514" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283722" elapsed="0.000035"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.283879" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284040" elapsed="0.000062"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284255" elapsed="0.000037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284415" elapsed="0.000034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284565" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284713" elapsed="0.000033"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.284863" elapsed="0.000033"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285013" elapsed="0.000032"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285164" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285319" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285483" elapsed="0.000041"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285649" elapsed="0.000033"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285798" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.285946" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.286090" elapsed="0.000032"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.286259" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.286430" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.286581" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.286730" elapsed="0.000032"/>
+</kw>
+<arg>firstname=Sana</arg>
+<arg>lastname=Bano</arg>
+<arg>email=user3</arg>
+<arg>password=Test@789</arg>
+<arg>confirm_password=Test@789</arg>
+<arg>search_item=Music 2</arg>
+<status status="FAIL" start="2026-02-18T23:26:50.220112" elapsed="0.066882">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-18T23:26:50.217241" elapsed="0.070712">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</test>
+<test id="s1-t5" name="E2E Flow for user Akash" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.292445" level="INFO">Akash</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.292031" elapsed="0.000495"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.292936" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.292686" elapsed="0.000311"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:50.298580" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.299587" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-18T23:26:50.293135" elapsed="0.010130">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.303684" elapsed="0.000062"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.303888" elapsed="0.000037"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304051" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304232" elapsed="0.000038"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304399" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304558" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304723" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.304882" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305032" elapsed="0.000034"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305272" elapsed="0.000036"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305443" elapsed="0.000036"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305608" elapsed="0.000033"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305810" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.305965" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306123" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306277" elapsed="0.000035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306425" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306579" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306730" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.306900" elapsed="0.000033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307055" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307250" elapsed="0.000034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307408" elapsed="0.000034"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307555" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307707" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.307851" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308015" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308212" elapsed="0.000040"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308373" elapsed="0.000033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308528" elapsed="0.000032"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308677" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.308886" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.309040" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.309221" elapsed="0.000036"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.309396" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.309612" elapsed="0.000050"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.310298" elapsed="0.000148"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.310904" elapsed="0.000111"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.311361" elapsed="0.000071"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.311656" elapsed="0.000066"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.311919" elapsed="0.000051"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.312133" elapsed="0.000042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.312317" elapsed="0.000045"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.312554" elapsed="0.000053"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.312821" elapsed="0.000052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313010" elapsed="0.000034"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313211" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313369" elapsed="0.000033"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313541" elapsed="0.000046"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313720" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.313873" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314028" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314177" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314333" elapsed="0.000035"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314485" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314655" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.314839" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.315001" elapsed="0.000035"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.315195" elapsed="0.000041"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.315354" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.315517" elapsed="0.000036"/>
+</kw>
+<arg>firstname=Akash</arg>
+<arg>lastname=Sharma</arg>
+<arg>email=user4</arg>
+<arg>password=Hello@123</arg>
+<arg>confirm_password=Hello@123</arg>
+<arg>search_item=Fiction</arg>
+<status status="FAIL" start="2026-02-18T23:26:50.291415" elapsed="0.024375">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-18T23:26:50.289165" elapsed="0.027619">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</test>
+<test id="s1-t6" name="E2E Flow for user Rahul" line="10">
+<kw name="Complete User Flow">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.322984" level="INFO">Rahul</msg>
+<arg>${firstname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.322171" elapsed="0.000938"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T23:26:50.323560" level="INFO">Clicking on Register Link</msg>
+<arg>Clicking on Register Link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.323301" elapsed="0.000332"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-18T23:26:50.331233" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.332314" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-18T23:26:50.323800" elapsed="0.011883">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.336292" elapsed="0.000092"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.336547" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:gender-female</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.336707" elapsed="0.000037"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Firstname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.336910" elapsed="0.000038"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.337084" elapsed="0.000037"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:FirstName</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.337253" elapsed="0.000034"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Lastname</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.337447" elapsed="0.000063"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.337683" elapsed="0.000039"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:LastName</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.337887" elapsed="0.000071"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${random}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.338148" elapsed="0.000042"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${generated_email}</var>
+<arg>${email}${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.338417" elapsed="0.000067"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.338690" elapsed="0.000048"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.338914" elapsed="0.000044"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.339119" elapsed="0.000041"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.339355" elapsed="0.000048"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.339568" elapsed="0.000063"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.339806" elapsed="0.000109"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering Confirm Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.340081" elapsed="0.000043"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.340286" elapsed="0.000074"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:ConfirmPassword</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.340539" elapsed="0.000048"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:register-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.341167" elapsed="0.000120"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Registration Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.341589" elapsed="0.000064"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.341843" elapsed="0.000080"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out after registration</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.342082" elapsed="0.000043"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.342282" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging in with registered credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.342497" elapsed="0.000047"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.342705" elapsed="0.000043"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>${generated_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.342901" elapsed="0.000046"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.343119" elapsed="0.000046"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.343323" elapsed="0.000041"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.343530" elapsed="0.000050"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Search bar should be visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.343744" elapsed="0.000043"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344012" elapsed="0.000053"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering search product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344199" elapsed="0.000034"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:small-searchterms</arg>
+<arg>${search_item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344394" elapsed="0.000044"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344569" elapsed="0.000034"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Verifying search results</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344722" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.344873" elapsed="0.000033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Opening product details</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.345043" elapsed="0.000055"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath:(//h2[@class='product-title']/a)[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.345295" elapsed="0.000037"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.345463" elapsed="0.000045"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@value='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.345701" elapsed="0.000057"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.345996" elapsed="0.000046"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<arg>id:bar-notification</arg>
+<arg>The product has been added</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.346184" elapsed="0.000035"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The product has been added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.346414" elapsed="0.000036"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://span[text()='Shopping cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.346599" elapsed="0.000050"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.346798" elapsed="0.000046"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Updating quantity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347060" elapsed="0.000068"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347282" elapsed="0.000036"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347443" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath://input[contains(@class,'qty-input')]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347597" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347786" elapsed="0.000035"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${search_item}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.347939" elapsed="0.000068"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Removing item from cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.348162" elapsed="0.000035"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>xpath://input[@name='removefromcart']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.348387" elapsed="0.000039"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='updatecart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.348549" elapsed="0.000033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Your Shopping Cart is empty!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.348699" elapsed="0.000047"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Logging out</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.348946" elapsed="0.000044"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.349122" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Log out']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.349276" elapsed="0.000034"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://a[text()='Register']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-18T23:26:50.349424" elapsed="0.000033"/>
+</kw>
+<arg>firstname=Rahul</arg>
+<arg>lastname=Verma</arg>
+<arg>email=user5</arg>
+<arg>password=Hello@456</arg>
+<arg>confirm_password=Hello@456</arg>
+<arg>search_item=Black &amp; White Diamond Heart</arg>
+<status status="FAIL" start="2026-02-18T23:26:50.321286" elapsed="0.028440">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-18T23:26:50.318429" elapsed="0.032401">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</status>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-18T23:26:50.354206" elapsed="3.211009"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:26:50.353373" elapsed="3.212102"/>
+</kw>
+<status status="FAIL" start="2026-02-18T23:21:24.572535" elapsed="328.993009"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="E2E Flow" id="s1" pass="2" fail="4" skip="0">E2E Flow</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-18T23:26:49.975760" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.227809" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.298580" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+<msg time="2026-02-18T23:26:50.331233" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.75)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7c5664455
+	0x7ff7c56644b0
+	0x7ff7c53fd49d
+	0x7ff7c53d4012
+	0x7ff7c5488c66
+	0x7ff7c54a5072
+	0x7ff7c5448e38
+	0x7ff7c5449d23
+	0x7ff7c5933b60
+	0x7ff7c592e3e8
+	0x7ff7c594e75a
+	0x7ff7c5680805
+	0x7ff7c56897ac
+	0x7ff7c566d7b4
+	0x7ff7c566d966
+	0x7ff7c5653477
+	0x7ff841fde8d7
+	0x7ff84416c40c
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13493","test_complete_user_journey[Sree Bhargav Reddy_Camera]","Pytest.tests","2026-02-24","passed","2026-02-24","","test_complete_user_journey","",""
+"","17","test_complete_user_journey[Kalla_Smartphone]","","2026-02-24","broken","2026-02-24","","","",""
+"","14246","test_complete_user_journey[Kalla_Smartphone]","Pytest.tests","2026-02-24","passed","2026-02-24","","test_complete_user_journey","",""
+"","5790","test_complete_user_journey[ROHITH_]","Pytest.tests","2026-02-24","broken","2026-02-24","","test_complete_user_journey","",""
+"","14741","test_complete_user_journey[Sana_Blue and green Sneaker]","Pytest.tests","2026-02-24","passed","2026-02-24","","test_complete_user_journey","",""
+"","15516","test_complete_user_journey[Amulya Rani_Album]","Pytest.tests","2026-02-24","passed","2026-02-24","","test_complete_user_journey","",""

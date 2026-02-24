@@ -1,0 +1,24 @@
+2026-02-19 15:15:33,597 - INFO - ===== Starting Complete User Journey Test =====
+2026-02-19 15:15:33,598 - INFO - Clicking Register
+2026-02-19 15:15:34,345 - INFO - Generated email: user_7dda24b7-f887-4c0b-8846-34cdd6616c62@test.com
+2026-02-19 15:15:34,345 - INFO - Registering new user
+2026-02-19 15:15:36,018 - INFO - Registration successful
+2026-02-19 15:15:36,019 - INFO - Logging out after registration
+2026-02-19 15:15:37,036 - INFO - Clicking Login
+2026-02-19 15:15:37,671 - INFO - Logging in with registered credentials
+2026-02-19 15:15:38,862 - INFO - Login successful
+2026-02-19 15:15:38,862 - INFO - Searching product: Camera
+2026-02-19 15:15:39,727 - INFO - Search results displayed
+2026-02-19 15:15:39,728 - INFO - Opening first product from results
+2026-02-19 15:15:40,590 - INFO - Product title and price verified
+2026-02-19 15:15:40,590 - INFO - Adding product to cart
+2026-02-19 15:15:41,459 - INFO - Product added to cart successfully
+2026-02-19 15:15:41,459 - INFO - Navigating to cart
+2026-02-19 15:15:42,403 - INFO - Updating cart quantity to 2
+2026-02-19 15:15:43,040 - INFO - Cart quantity updated successfully
+2026-02-19 15:15:43,041 - INFO - Removing item from cart
+2026-02-19 15:15:43,777 - INFO - Cart is empty after removal
+2026-02-19 15:15:43,778 - INFO - Logging out
+2026-02-19 15:15:44,721 - INFO - Validating session by accessing customer info page
+2026-02-19 15:15:45,326 - INFO - Session validation successful
+2026-02-19 15:15:45,328 - INFO - ===== Test Completed Successfully =====
