@@ -43,5 +43,32 @@
         "contact": "999",
         "active": true,
         "approved": false
+    },
+    {
+        "id": 6,
+        "name": "Hotel3661",
+        "category": "Indian",
+        "location": "City",
+        "contact": "999",
+        "active": true,
+        "approved": false
+    },
+    {
+        "id": 7,
+        "name": "TestHotel_1771919306",
+        "category": "Indian",
+        "location": null,
+        "contact": null,
+        "active": true,
+        "approved": true
+    },
+    {
+        "id": 8,
+        "name": "Biryani Hub",
+        "category": "Indian",
+        "location": "Hyderabad",
+        "contact": "874529",
+        "active": true,
+        "approved": false
     }
 ]

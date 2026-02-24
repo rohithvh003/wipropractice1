@@ -1,4 +1,5 @@
 import requests
+import time
 
 BASE = "http://127.0.0.1:5000"
 
@@ -65,39 +66,83 @@ def test_10_search():
     assert r.status_code == 200
 
 
-
 def test_place_order():
 
-    # create restaurant
+    # ----------------------------
+    # Create Unique Restaurant
+    # ----------------------------
+    unique_restaurant = f"TestHotel_{int(time.time())}"
+
     r = requests.post(f"{BASE}/api/v1/restaurants", json={
-        "name": "TestHotel",
+        "name": unique_restaurant,
         "category": "Indian"
     })
-    rid = r.json()["id"]
 
-    # approve
-    requests.put(f"{BASE}/api/v1/admin/restaurants/{rid}/approve")
+    print("Create Restaurant:", r.status_code, r.json())
+    assert r.status_code == 201, "Restaurant creation failed"
 
-    # add dish
-    requests.post(f"{BASE}/api/v1/restaurants/{rid}/dishes",
-                  json={"name": "Pizza", "price": 200})
+    restaurant_data = r.json()
+    assert "id" in restaurant_data
+    rid = restaurant_data["id"]
 
-    # create user
-    u = requests.post(f"{BASE}/api/v1/users/register",
-                      json={"name": "User", "email": "u@mail.com", "password": "123"})
-    uid = u.json()["id"]
+    # ----------------------------
+    # Approve Restaurant
+    # ----------------------------
+    approve = requests.put(
+        f"{BASE}/api/v1/admin/restaurants/{rid}/approve"
+    )
 
-    # place order
-    order = requests.post(f"{BASE}/api/v1/orders", json={
-        "user_id": uid,
-        "restaurant_id": rid,
-        "items": [{"name": "Pizza", "qty": 2}]
-    })
+    print("Approve Restaurant:", approve.status_code)
+    assert approve.status_code == 200, "Restaurant approval failed"
 
-    assert order.status_code == 201
+    # ----------------------------
+    # Add Dish
+    # ----------------------------
+    dish = requests.post(
+        f"{BASE}/api/v1/restaurants/{rid}/dishes",
+        json={"name": "Pizza", "price": 200}
+    )
 
+    print("Add Dish:", dish.status_code)
+    assert dish.status_code == 201, "Dish creation failed"
 
+    # ----------------------------
+    # Create Unique User
+    # ----------------------------
+    unique_email = f"user_{int(time.time())}@mail.com"
 
+    u = requests.post(
+        f"{BASE}/api/v1/users/register",
+        json={
+            "name": "User",
+            "email": unique_email,
+            "password": "123"
+        }
+    )
+
+    print("Create User:", u.status_code, u.json())
+    assert u.status_code == 201, "User creation failed"
+
+    user_data = u.json()
+    assert "id" in user_data
+    uid = user_data["id"]
+
+    # ----------------------------
+    # Place Order
+    # ----------------------------
+    order = requests.post(
+        f"{BASE}/api/v1/orders",
+        json={
+            "user_id": uid,
+            "restaurant_id": rid,
+            "items": [
+                {"name": "Pizza", "qty": 2}
+            ]
+        }
+    )
+
+    print("Place Order:", order.status_code, order.json())
+    assert order.status_code == 201, "Order placement failed"
 
 def test_12_orders_by_restaurant():
     r = requests.get(f"{BASE}/api/v1/restaurants/1/orders")

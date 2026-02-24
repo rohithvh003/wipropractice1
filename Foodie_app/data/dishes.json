@@ -30,5 +30,53 @@
         "price": "200",
         "restaurant_id": 5,
         "enabled": true
+    },
+    {
+        "id_dishes": 6,
+        "name": "Pizza",
+        "type": "veg",
+        "price": "200",
+        "restaurant_id": 6,
+        "enabled": true
+    },
+    {
+        "id_dishes": 7,
+        "name": "Burger",
+        "type": "veg",
+        "price": 120,
+        "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 8,
+        "name": "Burger",
+        "type": "veg",
+        "price": 120,
+        "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 9,
+        "name": "Burger",
+        "type": "veg",
+        "price": 120,
+        "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 10,
+        "name": "Burger",
+        "type": "veg",
+        "price": 120,
+        "restaurant_id": 1,
+        "enabled": true
+    },
+    {
+        "id_dishes": 11,
+        "name": "Pizza",
+        "type": "veg",
+        "price": 200,
+        "restaurant_id": 7,
+        "enabled": true
     }
 ]

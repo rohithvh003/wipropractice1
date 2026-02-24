@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Cache
+__pycache__/
+.pytest_cache/
+.robocode_cache/
+
+# Reports
+allure-report/
+allure-results/
+reports/
+log/
+*.log
+report.html
+output.xml
+
+# Screenshots
+screenshots/

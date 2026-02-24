@@ -28,5 +28,17 @@
         "name": "User4911",
         "email": "user4911@mail.com",
         "password": "123"
+    },
+    {
+        "id": 6,
+        "name": "User3661",
+        "email": "user3661@mail.com",
+        "password": "123"
+    },
+    {
+        "id": 7,
+        "name": "User",
+        "email": "user_1771919306@mail.com",
+        "password": "123"
     }
 ]
